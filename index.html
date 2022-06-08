@@ -8,6 +8,7 @@
     <link rel="icon" href="./img/icon_logo_ichiraku-01.png"> <!--Icono que se muestra en la pestaña del navegador-->
     <link rel="stylesheet" href="./css/index.css"> <!--Linkeo del archivo css-->
     <script src="https://kit.fontawesome.com/45ffcbef33.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header> <!--Header-->
@@ -34,116 +35,128 @@
     </header> <!--Fin del Header-->
     <main id="home-main">
         <section id="last_news"> <!--Banner de ultimas noticias-->
-            <article class="banner">
-                <div class="banner__image">
-                    <img src="./img/one_piece_banner.jpg" alt="">
-                </div>
-                <div class="banner__title-container">
-                    <div class="banner__title">
-                        <h1>ULTIMAS NOTICIAS</h1>
+            <div data-aos="fade-right" data-aos-duration="1000">
+                <article class="banner">
+                    <div class="banner__image">
+                        <img src="./img/one_piece_banner.jpg" alt="">
                     </div>
-                </div>
-                <div class="banner__news">
-                    <h2 class="banner__news-title">ONE PIECE MUESTRA UN NUEVO TRAILER DE "STAMPEDE"</h2>
-                    <p class="banner__news-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti minima a natus aliquam expedita eveniet perspiciatis placeat aut obcaecati, harum cum doloremque doloribus ipsum, inventore iste architecto impedit quod. Aliquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus at illo voluptas, repellat quam ipsa deleniti eius alias temporibus obcaecati aut, dolores commodi libero. Molestias eaque illo ut sed iste!</p>
-                </div>
-            </article>
+                    <div class="banner__title-container">
+                        <div class="banner__title">
+                            <h1>ULTIMAS NOTICIAS</h1>
+                        </div>
+                    </div>
+                    <div class="banner__news">
+                        <h2 class="banner__news-title">ONE PIECE MUESTRA UN NUEVO TRAILER DE "STAMPEDE"</h2>
+                        <p class="banner__news-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti minima a natus aliquam expedita eveniet perspiciatis placeat aut obcaecati, harum cum doloremque doloribus ipsum, inventore iste architecto impedit quod. Aliquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus at illo voluptas, repellat quam ipsa deleniti eius alias temporibus obcaecati aut, dolores commodi libero. Molestias eaque illo ut sed iste!</p>
+                    </div>
+                </article>
+            </div>
         </section> <!--Fin del banner-->
         <div class="cards-container">
-            <section class="news-cards"> <!--Seccion de noticias de anime, manga y relacionados-->                
-                <article class="news-cards__card">
-                    <div class="news-cards__title">
-                        <div class="news-cards__icon">
-                            <img src="./img/aoashi_teaser.jpg" alt="">
+            <section class="news-cards"> <!--Seccion de noticias de anime, manga y relacionados-->
+                <div data-aos="zoom-in-up" data-aos-offset="50">                
+                    <article class="news-cards__card">
+                            <div class="news-cards__title">
+                                <div class="news-cards__icon">
+                                    <img src="./img/portadas/anime/aoashi.jpg" alt="">
+                                </div>
+                                <h2>AO ASHI ES EL NUEVO HAIKYU, CAUSANDO FUROR ENTRE LOS FANS</h2>
+                            </div>
+                            <p class="news-cards__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error velit minima accusamus iste quisquam corrupti numquam ex doloremque ad! Eveniet officia veniam vitae laborum, exercitationem error veritatis ipsam sapiente praesentium!</p>
+                    </article>
+                </div>
+                <div data-aos="zoom-in-up" data-aos-offset="50">
+                    <article class="news-cards__card">
+                        <div class="news-cards__title">
+                            <div class="news-cards__icon">
+                                <img src="./img/article_ivrea.png" alt="">
+                            </div>
+                            <h2>MANGA</h2>
                         </div>
-                        <h2>AO ASHI ES EL NUEVO HAIKYU, CAUSANDO FUROR ENTRE LOS FANS</h2>
-                    </div>
-                    <p class="news-cards__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error velit minima accusamus iste quisquam corrupti numquam ex doloremque ad! Eveniet officia veniam vitae laborum, exercitationem error veritatis ipsam sapiente praesentium!</p>
-                </article>
-                <article class="news-cards__card">
-                    <div class="news-cards__title">
-                        <div class="news-cards__icon">
-                            <img src="./img/article_ivrea.png" alt="">
+                        <p class="news-cards__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero dolore temporibus, maiores et nulla numquam voluptatum corrupti sint est? Exercitationem quo optio explicabo ex repellat possimus libero quas minus adipisci.</p>
+                    </article>
+                </div>
+                <div data-aos="zoom-in-up" data-aos-offset="50">
+                    <article class="news-cards__card">
+                        <div class="news-cards__title">
+                            <div class="news-cards__icon">
+                                <img src="./img/comiccon.png" alt="">
+                            </div>
+                            <h2>RELACIONADAS</h2>
                         </div>
-                        <h2>MANGA</h2>
-                    </div>
-                    <p class="news-cards__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero dolore temporibus, maiores et nulla numquam voluptatum corrupti sint est? Exercitationem quo optio explicabo ex repellat possimus libero quas minus adipisci.</p>
-                </article>
-                <article class="news-cards__card">
-                    <div class="news-cards__title">
-                        <div class="news-cards__icon">
-                            <img src="./img/comiccon.png" alt="">
-                        </div>
-                        <h2>RELACIONADAS</h2>
-                    </div>
-                    <p class="news-cards__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, ad laboriosam. Ullam enim dolorem totam. Pariatur consequatur deleniti doloremque laborum, assumenda omnis laudantium molestiae ullam? Reprehenderit quos ullam dolores at!</p>
-                </article>
+                        <p class="news-cards__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, ad laboriosam. Ullam enim dolorem totam. Pariatur consequatur deleniti doloremque laborum, assumenda omnis laudantium molestiae ullam? Reprehenderit quos ullam dolores at!</p>
+                    </article>
+                </div>
             </section> <!--Fin seccion de noticias-->
             <section class="this-week"> <!--Seccion de estrenos-->
-                <article class="this-week__card">
-                    <ul class="card__list">
-                        <h2 class="card__title">A LA VENTA ESTA SEMANA</h2>
-                        <li class="card__item">
-                            <div class="card__item-image">
-                                <img src="./img/jujutsu_17.jpg" alt="">
-                            </div>
-                            <div class="card__item-info">
-                                <p class="card__item-title">JUJUTSU KAISEN - TOMO 17</p>
-                                <p class="card__item-data">EDITORIAL</p>
-                            </div>
-                        </li>
-                        <li class="card__item">
-                            <div class="card__item-image">
-                                <img src="" alt="">
-                            </div>
-                            <div class="card__item-info">
-                                <p class="card__item-title">DEMON SLAYER - TOMO 7</p>
-                                <p class="card__item-data">EDITORIAL</p>
-                            </div>
-                        </li>
-                        <li class="card__item">
-                            <div class="card__item-image">
-                                <img src="" alt="">
-                            </div>
-                            <div class="card__item-info">
-                                <p class="card__item-title">SPY X FAMILY - TOMO 4</p>
-                                <p class="card__item-data">EDITORIAL</p>
-                            </div>
-                        </li>
-                    </ul>
-                </article>
-                <article class="this-week__card">
-                    <ul class="card__list">
-                        <h2 class="card__title">EN EMISION ESTA SEMANA</h2>
-                        <li class="card__item">
-                            <div class="card__item-image">
-                                <img src="./img/aoashi_teaser.jpg" alt="">
-                            </div>
-                            <div class="card__item-info">
-                                <p class="card__item-title">AO ASHI - CAPITULO 7</p>
-                                <p class="card__item-data">DIA-HORARIO-N° CAP</p>
-                            </div>
-                        </li>
-                        <li class="card__item">
-                            <div class="card__item-image">
-                                <img src="" alt="">
-                            </div>
-                            <div class="card__item-info">
-                                <p class="card__item-title">TOMODACHI GAME - CAPITULO 10</p>
-                                <p class="card__item-data">DIA-HORARIO-N° CAP</p>
-                            </div>
-                        </li>
-                        <li class="card__item">
-                            <div class="card__item-image">
-                                <img src="" alt="">
-                            </div>
-                            <div class="card__item-info">
-                                <p class="card__item-title">NARUTO SHIPPUDEN - CAPITULO 250</p>
-                                <p class="card__item-data">DIA-HORARIO-N° CAP</p>
-                            </div>
-                        </li>
-                    </ul>
-                </article>
+                <div data-aos="zoom-in-up" data-aos-offset="50">
+                    <article class="this-week__card">
+                        <ul class="card__list">
+                            <h2 class="card__title">A LA VENTA ESTA SEMANA</h2>
+                            <li class="card__item">
+                                <div class="card__item-image">
+                                    <img src="./img/portadas/manga/jujutsu17.jpg" alt="Portada tomo numero 17 jujutsu kaisen">
+                                </div>
+                                <div class="card__item-info">
+                                    <p class="card__item-title">JUJUTSU KAISEN - TOMO 17</p>
+                                    <p class="card__item-data">EDITORIAL: PANINI</p>
+                                </div>
+                            </li>
+                            <li class="card__item">
+                                <div class="card__item-image">
+                                    <img src="./img/portadas/manga/bluelock12.jpg" alt="Portada tomo numero 12 blue lock">
+                                </div>
+                                <div class="card__item-info">
+                                    <p class="card__item-title">BLUE LOCK - TOMO #12</p>
+                                    <p class="card__item-data">EDITORIAL: IVREA</p>
+                                </div>
+                            </li>
+                            <li class="card__item">
+                                <div class="card__item-image">
+                                    <img src="./img/portadas/manga/spyfamily6.jpg" alt="">
+                                </div>
+                                <div class="card__item-info">
+                                    <p class="card__item-title">SPY X FAMILY - TOMO #6</p>
+                                    <p class="card__item-data">EDITORIAL: IVREA</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </article>
+                </div>
+                <div data-aos="zoom-in-up" data-aos-offset="50">
+                    <article class="this-week__card">
+                        <ul class="card__list">
+                            <h2 class="card__title">EN EMISION ESTA SEMANA</h2>
+                            <li class="card__item">
+                                <div class="card__item-image">
+                                    <img src="./img/portadas/anime/aoashi.jpg" alt="Portada anime ao ashi">
+                                </div>
+                                <div class="card__item-info">
+                                    <p class="card__item-title">AO ASHI</p>
+                                    <p class="card__item-data">SABADOS - 2 PM (ARG) - CAPITULO 10</p>
+                                </div>
+                            </li>
+                            <li class="card__item">
+                                <div class="card__item-image">
+                                    <img src="./img/portadas/anime/tomodachigame.jpg" alt="Portada anime tomodachi game">
+                                </div>
+                                <div class="card__item-info">
+                                    <p class="card__item-title">TOMODACHI GAME</p>
+                                    <p class="card__item-data">MARTES - 10 AM (ARG) - CAPITULO 9</p>
+                                </div>
+                            </li>
+                            <li class="card__item">
+                                <div class="card__item-image">
+                                    <img src="/img/portadas/anime/spyxfamily.jpg" alt="Portada anime spy x family">
+                                </div>
+                                <div class="card__item-info">
+                                    <p class="card__item-title">SPY X FAMILY</p>
+                                    <p class="card__item-data">SABADOS - 11:30 AM (ARG) - 11</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </article>
+                </div>
             </section><!--Fin de estrenos-->
         </div>
     </main>
@@ -197,5 +210,9 @@
             </li>
         </ul>
     </footer> <!--Fin footer-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
