@@ -5,29 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ICHIRAKU NEWS - NOTICIAS</title>
-    <link rel="icon" href="../img/icon_logo_ichiraku-01.png"> <!--Icono que se muestra en la pestaña del navegador-->
-    <link rel="stylesheet" href="../css/index.css"> <!--Linkeo del archivo css-->
+    <link rel="icon" href="../../img/icon_logo_ichiraku-01.png"> <!--Icono que se muestra en la pestaña del navegador-->
     <script src="https://kit.fontawesome.com/45ffcbef33.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <link rel="stylesheet" href="../../css/index.css"> <!--Linkeo del archivo css-->
 </head>
 <body>
     <header> <!--Header-->
         <nav class="navigation">
             <input type="checkbox" name="mobile-nav" id="toggle-check">
             <label class="menu-button" for="toggle-check"><i class="fa-solid fa-bars"></i></label>
-            <a class="navigation__logo" href="../index.html"><img src="../img/logo_with_text_ichiraku.png" alt="Website logo"></a>
+            <a class="navigation__logo" href="../../index.html"><img src="../../img/logo_with_text_ichiraku.png" alt="Website logo"></a>
             <ul class="navigation__menu">
-                <li class="menu__item menu__item--active">
-                    <a class="menu__link" href="./news.html">NOTICIAS</a>
+                <li class="menu__item dropdown">
+                    <a class="menu__link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        NOTICIAS
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="../pages/news/news_manga.html">MANGA</a>
+                        <a class="dropdown-item" href="#">ANIME</a>
+                        <a class="dropdown-item" href="#">RELACIONADAS</a>
+                    </div>
                 </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="./premieres.html">ESTRENOS</a>
+                <li class="menu__item dropdown">
+                    <a class="menu__link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        ESTRENOS
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">MANGA</a>
+                        <a class="dropdown-item" href="#">ANIME</a>
+                    </div>
                 </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="./help.html">AYUDA</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="#">MAS</a>
+                <li class="menu__item dropdown">
+                    <a class="menu__link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        MAS
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">SORTEOS</a>
+                        <a class="dropdown-item" href="#">EVENTOS</a>
+                        <a class="dropdown-item" href="#">CONTACTO</a>
+                        <a class="dropdown-item" href="#">FAQ Y AYUDA</a>
+                        <a class="dropdown-item" href="#">EQUIPO ICHIRAKU</a>
+                        <a class="dropdown-item" href="#">TRABAJA CON NOSOTROS</a>
+                    </div>
                 </li>
             </ul>
         </nav>
@@ -41,7 +62,7 @@
         <section class="important-news"> <!--Seccion de noticias importantes-->
             <div class="important-news__info-container">
                 <div class="important-news__image">
-                    <img src="../img/portadas/manga/sololeveling-news.jpg" alt="">
+                    <img src="../../img/portadas/manga/sololeveling-news.jpg" alt="">
                 </div>
                 <h2 class="important-news__title">Solo leveling ya se ecuentra a la venta en Argentina, de la mano de IVREA</h2>
                 <p class="important-news__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam temporibus voluptas delectus illum animi officiis amet, quaerat iste nulla tempora ut voluptate est voluptatum ad fuga eius provident magni ipsam! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed nulla repellendus corrupti, voluptate molestiae rerum temporibus, fuga tempore libero iusto saepe, aspernatur iste ipsum corporis provident quo deserunt id repudiandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et animi esse ab, adipisci voluptatibus consequuntur similique, vel ratione enim nisi, quidem reprehenderit deserunt nam perspiciatis libero? Veritatis doloribus error nam?</p>
@@ -51,7 +72,7 @@
             <div data-aos="fade-up" data-aos-offset="50">
                 <div class="news__item">
                     <div class="news__image">
-                        <img src="../img/portadas/manga/jujutsu17.jpg" alt="">
+                        <img src="../../img/portadas/manga/jujutsu17.jpg" alt="">
                     </div>
                     <div class="news__info">
                         <h3 class="news__title">Tomo 17 de jujutsu kaisen ya a la venta.</h3>
@@ -62,7 +83,7 @@
             <div data-aos="fade-up" data-aos-offset="50">
                 <div class="news__item">
                     <div class="news__image">
-                        <img src="../img/portadas/manga/sololeveling1.jpg" alt="">
+                        <img src="../../img/portadas/manga/sololeveling1.jpg" alt="">
                     </div>
                     <div class="news__info">
                         <h3 class="news__title">Ya a la venta el tan esperado tomo 1 de solo leveling.</h3>
@@ -73,7 +94,7 @@
             <div data-aos="fade-up" data-aos-offset="50">
                 <div class="news__item">
                     <div class="news__image">
-                        <img src="../img/portadas/manga/onepiece_manga.jpg" alt="">
+                        <img src="../../img/portadas/manga/onepiece_manga.jpg" alt="">
                     </div>
                     <div class="news__info">
                         <h3 class="news__title">Se anuncio que one piece sacara a la venta una edicion especial del tomo 1</h3>
@@ -84,7 +105,7 @@
             <div data-aos="fade-up" data-aos-offset="50">
                 <div class="news__item">
                     <div class="news__image">
-                        <img src="../img/portadas/manga/spyfamily6.jpg" alt="">
+                        <img src="../../img/portadas/manga/spyfamily6.jpg" alt="">
                     </div>
                     <div class="news__info">
                         <h3 class="news__title">Sale a la luz la portada del tomo 6 de Spy x Family
@@ -97,8 +118,8 @@
     </main>
     <footer> <!--Footer-->
         <div class="footer-section__logo">
-            <a href="../index.html">
-                <img src="../img/icon_logo_ichiraku-01.png" alt="ichiraku logo">
+            <a href="../../index.html">
+                <img src="../../img/icon_logo_ichiraku-01.png" alt="ichiraku logo">
             </a>
         </div>
         <ul class="footer-section">
@@ -124,23 +145,23 @@
         <ul class="footer-section">
             <h2 class="footer-section__title">CONTACTO</h2>
             <li class="footer-section__item">
-                <img class="footer-section__icon" src="../img/social_media_icons/Fb-Redes_Mesa de trabajo 1.png" alt="">
+                <img class="footer-section__icon" src="../../img/social_media_icons/Fb-Redes_Mesa de trabajo 1.png" alt="">
                 <a class="footer-section__link" href="https://www.facebook.com/IchirakuNews">FACEBOOK</a>
             </li>
             <li class="footer-section__item">
-                <img class="footer-section__icon" src="../img/social_media_icons/Tw-Redes_Mesa de trabajo 1.png" alt="">
+                <img class="footer-section__icon" src="../../img/social_media_icons/Tw-Redes_Mesa de trabajo 1.png" alt="">
                 <a class="footer-section__link" href="https://twitter.com/IchirakuNews">TWITTER</a>
             </li>
             <li class="footer-section__item">
-                <img class="footer-section__icon" src="../img/social_media_icons/Ig-Redes_Mesa de trabajo 1.png" alt="">
+                <img class="footer-section__icon" src="../../img/social_media_icons/Ig-Redes_Mesa de trabajo 1.png" alt="">
                 <a class="footer-section__link" href="https://www.instagram.com/IchirakuNews/">INSTAGRAM</a>
             </li>
             <li class="footer-section__item">
-                <img class="footer-section__icon" src="../img/social_media_icons/Yt-Redes_Mesa de trabajo 1.png" alt="">
+                <img class="footer-section__icon" src="../../img/social_media_icons/Yt-Redes_Mesa de trabajo 1.png" alt="">
                 <a class="footer-section__link" href="https://www.youtube.com/c/IchirakuNews">YOUTUBE</a>
             </li>
             <li class="footer-section__item">
-                <img class="footer-section__icon" src="../img/social_media_icons/Mail-Redes_Mesa de trabajo 1.png" alt="">
+                <img class="footer-section__icon" src="../../img/social_media_icons/Mail-Redes_Mesa de trabajo 1.png" alt="">
                 <a class="footer-section__link" href="./contact.html">MAIL</a>
             </li>
         </ul>
@@ -149,5 +170,6 @@
     <script>
         AOS.init();
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
