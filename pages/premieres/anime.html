@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICHIRAKU NEWS - ESTRENOS ANIME</title>
+    <link rel="icon" href="../../img/icon_logo_ichiraku-01.png"> <!--Icono que se muestra en la pestaña del navegador-->
+    <script src="https://kit.fontawesome.com/45ffcbef33.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <link rel="stylesheet" href="../../css/index.css"> <!--Linkeo del archivo css-->
+</head>
+<body>
+    <header> <!--Header-->
+        <nav class="navigation">
+            <input type="checkbox" name="mobile-nav" id="toggle-check">
+            <label class="menu-button" for="toggle-check"><i class="fa-solid fa-bars"></i></label>
+            <a class="navigation__logo" href="../../index.html"><img src="../../img/logo_with_text_ichiraku.png" alt="Website logo"></a>
+            <ul class="navigation__menu">
+                <li class="menu__item dropdown">
+                    <a class="menu__link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        NOTICIAS
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="../news/manga.html">MANGA</a>
+                        <a class="dropdown-item" href="../news/anime.html">ANIME</a>
+                        <a class="dropdown-item" href="../news/related.html">RELACIONADAS</a>
+                    </div>
+                </li>
+                <li class="menu__item dropdown">
+                    <a class="menu__link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        ESTRENOS
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="./manga.html">MANGA</a>
+                        <a class="dropdown-item" href="./anime.html">ANIME</a>
+                    </div>
+                </li>
+                <li class="menu__item dropdown">
+                    <a class="menu__link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        MAS
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="../others/giveaways.html">SORTEOS</a>
+                        <a class="dropdown-item" href="../others/events.html">EVENTOS</a>
+                        <a class="dropdown-item" href="../others/contact.html">CONTACTO</a>
+                        <a class="dropdown-item" href="../others/help.html">FAQ Y AYUDA</a>
+                        <a class="dropdown-item" href="../others/ichirakuteam.html">EQUIPO ICHIRAKU</a>
+                        <a class="dropdown-item" href="../others/work_with_us.html">TRABAJA CON NOSOTROS</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header> <!--Fin del header-->   
+    <main id="main"> <!--Cartel con el titulo de la pagina-->
+        <div class="main__page-title">
+            <div class="main__title">
+                <h1>ANIME</h1>
+            </div>
+        </div>
+        <section class="featured-premieres"> <!--Estrenos/lanzamientos destacados-->
+            <h2 class="featured-premieres__title">DESTACADOS DE LA SEMANA</h2>
+            <div id="carousel-featured-premieres" class="carousel slide">
+                <div class="carousel-indicators carousel-indicators-featured-premieres">
+                    <button type="button" data-bs-target="#carousel-featured-premieres" data-bs-slide-to="0" class="active carousel-indicators-featured-premieres-button" aria-current="true" aria-label="Slide 1"></button>
+                    <button class="carousel-indicators-featured-premieres-button" type="button" data-bs-target="#carousel-featured-premieres" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button class="carousel-indicators-featured-premieres-button" type="button" data-bs-target="#carousel-featured-premieres" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="features-premieres__items-row">
+                            <div data-aos="zoom-in-down" data-aos-duration="1500">
+                                <div class="featured-premieres__item">
+                                    <img src="../../img/portadas/anime/aoashi.jpg" alt="">
+                                </div>
+                            </div>
+                            <div data-aos="zoom-in-down" data-aos-duration="1500">
+                                <div class="featured-premieres__item">
+                                    <img src="../../img/portadas/anime/dancedancedanseur.jpg" alt="">
+                                </div>
+                            </div>
+                            <div data-aos="zoom-in-down" data-aos-duration="1500">
+                                <div class="featured-premieres__item">
+                                <img src="../../img/portadas/anime/datealive4.jpg" alt="">
+                                </div>
+                            </div>
+                            <div data-aos="zoom-in-down" data-aos-duration="1500">
+                                <div class="featured-premieres__item">
+                                    <img src="../../img/portadas/anime/deaimon.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item active">
+                        <div class="features-premieres__items-row">
+                            <div data-aos="zoom-in-down" data-aos-duration="1500">
+                                <div class="featured-premieres__item">
+                                    <img src="../../img/portadas/anime/detectiveconan.jpg" alt="">
+                                </div>
+                            </div>
+                            <div data-aos="zoom-in-down" data-aos-duration="1500">
+                                <div class="featured-premieres__item">
+                                    <img src="../../img/portadas/anime/dragonquestdainodaibouken.jpg" alt="">
+                                </div>
+                            </div>
+                            <div data-aos="zoom-in-down" data-aos-duration="1500">
+                                <div class="featured-premieres__item">
+                                <img src="../../img/portadas/anime/holonograffiti.jpg" alt="">
+                                </div>
+                            </div>
+                            <div data-aos="zoom-in-down" data-aos-duration="1500">
+                                <div class="featured-premieres__item">
+                                    <img src="../../img/portadas/anime/kaguyasamaloveiswar.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item active">
+                        <div class="features-premieres__items-row">
+                            <div data-aos="zoom-in-down" data-aos-duration="1500">
+                                <div class="featured-premieres__item">
+                                    <img src="../../img/portadas/anime/kingdomseason4.jpg" alt="">
+                                </div>
+                            </div>
+                            <div data-aos="zoom-in-down" data-aos-duration="1500">
+                                <div class="featured-premieres__item">
+                                    <img src="../../img/portadas/anime/komi-san.jpg" alt="">
+                                </div>
+                            </div>
+                            <div data-aos="zoom-in-down" data-aos-duration="1500">
+                                <div class="featured-premieres__item">
+                                <img src="../../img/portadas/anime/lovelive.jpg" alt="">
+                                </div>
+                            </div>
+                            <div data-aos="zoom-in-down" data-aos-duration="1500">
+                                <div class="featured-premieres__item">
+                                    <img src="../../img/portadas/anime/machikado.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev control-prev-featured-premieres" type="button" data-bs-target="#carousel-featured-premieres" data-bs-slide="prev">
+                </button>
+                <button class="carousel-control-next control-next-featured-premieres" type="button" data-bs-target="#carousel-featured-premieres" data-bs-slide="next">
+                </button>
+            </div>
+            <p class="featured-premieres__mobile-description">TOKYO REVENGERS TOMO #16</p>
+            <div class="featured-premieres__mobile-image">
+                <img src="../../img/portadas/anime/tokyorevengers-featuredpremieres.jpg" alt="">
+            </div>
+        </section>
+        <section class="premieres"> <!--Todos los estrenos/lanzamientos-->
+            <h3 class="premieres__title">TODOS LOS LANZAMIENTOS</h3>
+            <div class="premieres__items-row">
+                <div data-aos="flip-left" data-aos-duration="1200" data-aos-offset="20">
+                    <div class="premieres__item">
+                        <img src="../../img/portadas/anime/milgram.jpg" alt="">
+                        <div class="premieres__item-hover-layer">
+                            <h4>Milgram</h4>
+                            <p>11 AM (ARG)</p>
+                            <p>SABADO</p>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="flip-left" data-aos-duration="1200" data-aos-offset="20">    
+                    <div class="premieres__item">
+                        <img src="../../img/portadas/anime/onepiece.jpg" alt="">
+                        <div class="premieres__item-hover-layer">
+                            <h4>One piece</h4>
+                            <p>3 PM (ARG)</p>
+                            <p>MARTES</p>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="flip-left" data-aos-duration="1200" data-aos-offset="20">
+                    <div class="premieres__item">
+                        <img src="../../img/portadas/anime/paripi.jpg" alt="">
+                        <div class="premieres__item-hover-layer">
+                            <h4>Paripi Koumei</h4>
+                            <p>1 PM (ARG)</p>
+                            <p>LUNES</p>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="flip-left" data-aos-duration="1200" data-aos-offset="20">
+                    <div class="premieres__item">
+                        <img src="../../img/portadas/anime/spyxfamily.jpg" alt="">
+                        <div class="premieres__item-hover-layer">
+                            <h4>SPY X FAMILY</h4>
+                            <p>11:30 AM (ARG)</p>
+                            <p>SABADO</p>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="flip-left" data-aos-duration="1200" data-aos-offset="20">
+                    <div class="premieres__item">
+                        <img src="../../img/portadas/anime/strikethebloodfinal.jpg" alt="">
+                        <div class="premieres__item-hover-layer">
+                            <h4>Strike the blood final season</h4>
+                            <p>10 AM (ARG)</p>
+                            <p>MIERCOLES</p>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="flip-left" data-aos-duration="1200" data-aos-offset="20">
+                    <div class="premieres__item">
+                        <img src="../../img/portadas/anime/summertimerender.jpg" alt="">
+                        <div class="premieres__item-hover-layer">
+                            <h4>SUMMERTIME RENDER</h4>
+                            <p>4 PM (ARG)</p>
+                            <p>VIERNES</p>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="flip-left" data-aos-duration="1200" data-aos-offset="20">
+                    <div class="premieres__item">
+                        <img src="../../img/portadas/anime/tomodachigame.jpg" alt="">
+                        <div class="premieres__item-hover-layer">
+                            <h4>TOMODACHI GAME</h4>
+                            <p>9:30 AM (ARG)</p>
+                            <p>MARTES</p>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="flip-left" data-aos-duration="1200" data-aos-offset="20">
+                    <div class="premieres__item">
+                        <img src="../../img/portadas/anime/kaginado.jpg" alt="">
+                        <div class="premieres__item-hover-layer">
+                            <h4>KAGINADO SEASON 2</h4>
+                            <p>5 PM (ARG)</p>
+                            <p>LUNES</p>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="flip-left" data-aos-duration="1200" data-aos-offset="20">
+                    <div class="premieres__item">
+                        <img src="../../img/portadas/anime/healergirl.jpg" alt="">
+                        <div class="premieres__item-hover-layer">
+                            <h4>HEALER GIRL</h4>
+                            <p>8 AM (ARG)</p>
+                            <p>JUEVES</p>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="flip-left" data-aos-duration="1200" data-aos-offset="20">
+                    <div class="premieres__item">
+                        <img src="../../img/portadas/anime/digimon.jpg" alt="">
+                        <div class="premieres__item-hover-layer">
+                            <h4>DIGIMON GHOST GAME</h4>
+                            <p>2:30 PM (ARG)</p>
+                            <p>MIERCOLES</p>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="flip-left" data-aos-duration="1200" data-aos-offset="20">
+                    <div class="premieres__item">
+                        <img src="../../img/portadas/anime/shieldhero.jpg" alt="">
+                        <div class="premieres__item-hover-layer">
+                            <h4>THE RISING OF THE SHIELD HERO SEASON 2</h4>
+                            <p>4:30 PM (ARG)</p>
+                            <p>LUNES</p>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="flip-left" data-aos-duration="1200" data-aos-offset="20">
+                    <div class="premieres__item">
+                        <img src="../../img/portadas/anime/builddivide.jpg" alt="">
+                        <div class="premieres__item-hover-layer">
+                            <h4>BUILD DIVIDE</h4>
+                            <p>10 AM (ARG)</p>
+                            <p>SABADO</p>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="flip-left" data-aos-duration="1200" data-aos-offset="20">
+                    <div class="premieres__item">
+                        <img src="../../img/portadas/anime/bluearchive.jpg" alt="">
+                        <div class="premieres__item-hover-layer">
+                            <h4>BLUE ARCHIVE</h4>
+                            <p>2:15 PM (ARG)</p>
+                            <p>LUNES</p>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="flip-left" data-aos-duration="1200" data-aos-offset="20">
+                    <div class="premieres__item">
+                        <img src="../../img/portadas/anime/cue!.jpg" alt="">
+                        <div class="premieres__item-hover-layer">
+                            <h4>CUE!</h4>
+                            <p>7:30 PM (ARG)</p>
+                            <p>VIERNES</p>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="flip-left" data-aos-duration="1200" data-aos-offset="20">
+                    <div class="premieres__item">
+                        <img src="../../img/portadas/anime/loveallplay.jpg" alt="">
+                        <div class="premieres__item-hover-layer">
+                            <h4>LOVE ALL PLAY</h4>
+                            <p>5 PM (ARG)</p>
+                            <p>DOMINGO</p>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="flip-left" data-aos-duration="1200" data-aos-offset="20">
+                    <div class="premieres__item">
+                        <img src="../../img/portadas/anime/youkaiwatch.jpg" alt="">
+                        <div class="premieres__item-hover-layer">
+                            <h4>YOUKAI WATCH</h4>
+                            <p>7 AM (ARG)</p>
+                            <p>SABADO</p>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="flip-left" data-aos-duration="1200" data-aos-offset="20">
+                    <div class="premieres__item">
+                        <img src="../../img/portadas/anime/rpgrealestate.jpg" alt="">
+                        <div class="premieres__item-hover-layer">
+                            <h4>RPG REAL ESTATE</h4>
+                            <p>1:30 PM (ARG)</p>
+                            <p>MIERCOLES</p>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="flip-left" data-aos-duration="1200" data-aos-offset="20">
+                    <div class="premieres__item">
+                        <img src="../../img/portadas/anime/shadowverseflame.jpg" alt="">
+                        <div class="premieres__item-hover-layer">
+                            <h4>SHADOWVERSE FLAME</h4>
+                            <p>11:15 AM (ARG)</p>
+                            <p>JUEVES</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer> <!--Footer-->
+        <div class="footer-section__logo">
+            <a href="../../index.html">
+                <img src="../../img/icon_logo_ichiraku-01.png" alt="ichiraku logo">
+            </a>
+        </div>
+        <ul class="footer-section">
+            <h2 class="footer-section__title">SOBRE NOSOTROS</h2>
+            <li class="footer-section__item">ACERCA</li>
+            <li class="footer-section__item">
+                <a class="footer-section__link" href="./help.html">AYUDA/FAQ</a>
+            </li>
+            <li class="footer-section__item">TERMINOS DE USO</li>
+            <li class="footer-section__item">POLITICA DE PRIVACIDAD</li>
+            <li class="footer-section__item">COOKIES</li>
+            <li class="footer-section__item">CONTACTO DE PRENSA</li>
+            <li class="footer-section__item">EMPLEO</li>
+            <li class="footer-section__item">DEJA TU OPINION</li>
+        </ul>
+        <ul class="footer-section">
+            <h2 class="footer-section__title">NAVEGACION</h2>
+            <li class="footer-section__item">ULTIMAS NOTICIAS MANGA</li>
+            <li class="footer-section__item">ULTIMAS NOTICIAS ANIME</li>
+            <li class="footer-section__item">CALENDARIO DE ESTRENOS</li>
+            <li class="footer-section__item">NOTICIAS DE RELACIONADAS</li>
+        </ul>
+        <ul class="footer-section">
+            <h2 class="footer-section__title">CONTACTO</h2>
+            <li class="footer-section__item">
+                <img class="footer-section__icon" src="../../img/social_media_icons/Fb-Redes_Mesa de trabajo 1.png" alt="">
+                <a class="footer-section__link" href="https://www.facebook.com/IchirakuNews">FACEBOOK</a>
+            </li>
+            <li class="footer-section__item">
+                <img class="footer-section__icon" src="../../img/social_media_icons/Tw-Redes_Mesa de trabajo 1.png" alt="">
+                <a class="footer-section__link" href="https://twitter.com/IchirakuNews">TWITTER</a>
+            </li>
+            <li class="footer-section__item">
+                <img class="footer-section__icon" src="../../img/social_media_icons/Ig-Redes_Mesa de trabajo 1.png" alt="">
+                <a class="footer-section__link" href="https://www.instagram.com/IchirakuNews/">INSTAGRAM</a>
+            </li>
+            <li class="footer-section__item">
+                <img class="footer-section__icon" src="../../img/social_media_icons/Yt-Redes_Mesa de trabajo 1.png" alt="">
+                <a class="footer-section__link" href="https://www.youtube.com/c/IchirakuNews">YOUTUBE</a>
+            </li>
+            <li class="footer-section__item">
+                <img class="footer-section__icon" src="../../img/social_media_icons/Mail-Redes_Mesa de trabajo 1.png" alt="">
+                <a class="footer-section__link" href="./contact.html">MAIL</a>
+            </li>
+        </ul>
+    </footer> <!--Fin footer-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
