@@ -107,7 +107,6 @@ header {
 .menu__item {
     margin-right: 15px;
     filter: drop-shadow(5px 5px 7px rgba(0, 0, 0, 0.5));
-    transition: all 500ms;
     width: 190px;
 }
 
@@ -309,10 +308,6 @@ footer {
 
 .carousel-indicators-news {
     bottom: -2.142vw;
-}
-
-.carousel-indicators .active {
-    background-color: #FF5A26;
 }
 
 .control-prev-news-cards {
@@ -649,8 +644,8 @@ footer {
     margin: 0 auto;
 }
 
-.carousel-indicators .active {
-    background-color: #FF5A26;
+.carousel-item-important-news{
+    height: 100%;
 }
 
 /*NEWS*/
@@ -701,17 +696,14 @@ footer {
     border-bottom: #FDF0D5 solid 3px;
     box-sizing: border-box;
     color: #232323;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(12, 1fr);
+    display: flex;
+    flex-direction: column;
     margin-top: 2.083vw;
 }
 
 .featured-premieres__title {
     font-size: 3.646vw;
     line-height: 3.125vw;
-    grid-column: 1 / -1;
-    grid-row: 1 / 2;
 }
 
 .featured-premieres__mobile-description {
@@ -719,9 +711,8 @@ footer {
 }
 
 .features-premieres__items-row {
-    grid-column: 1 / -1;
-    grid-row: 3 / 12;
     display: flex;
+    justify-content: space-between;
 }
 
 .featured-premieres__mobile-image {
@@ -735,13 +726,14 @@ footer {
 }
 
 .featured-premieres__item {
-    width: 17.969vw;
+    width: 17.169vw;
     height: 23.438vw;
 }
 
 .featured-premieres__item img {
     height: 100%;
     width: 100%;
+    border-radius: 20px;
 }
 
 /*CAROUSEL PREMIERES*/
@@ -777,19 +769,16 @@ footer {
     height: 0.781vw;
     border-radius: 50%;
     opacity: 1;
-    margin: 0 0.5vw;
+    margin: auto 0.5vw;
 }
 
 .carousel-indicators-featured-premieres{
-    bottom:-12%;
-    width: 15%;
+    bottom:-3vw;
+    width: 8vw;
     border-radius: 20px;
     border: solid 3px #FF8552;
-    margin: 0 auto;
-}
-
-.carousel-indicators .active {
-    background-color: #FF5A26;
+    margin: 0.7vw auto 0;
+    height: 10%;
 }
 
 
@@ -1102,22 +1091,80 @@ footer {
     text-decoration: underline;
 }
 
-/*WORK WITH US*/
-.work-with-us-title{
-    font-size: 3.646vw;
-    border-bottom: #FDF0D5 solid 3px;
-    margin-bottom: 1.302vw;
-}
+/*----------------------WORK WITH US----------------------*/
 
 .work-with-us-form{
     margin-top: 3vw;
     padding-right: 35vw;
 }
 
+.work-with-us-title{
+    font-size: 3.646vw;
+    border-bottom: #FDF0D5 solid 3px;
+    margin-bottom: 1.302vw;
+}
+
 .work-form{
     font-family: 'Pragati Narrow', sans-serif;
 }
+/*----------------------END WORK WITH US----------------------*/
 
+/*----------------------ICHIRAKU TEAM----------------------*/
+.team-cards__title {
+    font-size: 3.646vw;
+    text-align: center;
+    border-bottom: #FDF0D5 solid 3px;
+    width: 40%;
+    margin: 1.5vw auto 2.5vw;
+}
+
+.team-cards__team-section {
+    margin: 2vw auto;
+    width: 90%;
+    border-bottom: #FDF0D5 solid 3px;
+    text-align: center;
+    font-size: 2.3vw;
+}
+
+.team-cards__card {
+    width: 20%;
+    border-color: #d3d3d3;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.2);
+    min-height: 23vw;
+    max-height: 23vw;
+    background-color: #232323;
+    color: white;
+}
+
+.team-cards__image {
+    min-height: 9vw;
+    max-height: 9vw;
+}
+
+.team-cards__card-title{
+    font-size: 1.5vw;
+    text-align: center;
+    border-bottom: solid 1px #bebebe;
+    margin-bottom: 0.7vw;
+}
+
+.team-cards__card-text {
+    font-family: 'Pragati Narrow', sans-serif;
+    font-size: 0.8vw;
+    padding: 0 0.7vw;
+    min-height: 7.4vw;
+    max-height: 7.4vw;
+    overflow: hidden;
+    margin-bottom: 0.3vw;
+}
+
+.team-cards__socials {
+    height: 15%;
+    font-size: 1.5vw;
+    padding: 0 0.7vw;
+    text-align: center;
+}
+/*----------------------END ICHIRAKU TEAM----------------------*/
 
 /*----------------------MEDIA QUERIES----------------------*/
 @media screen and (max-width: 1024px) and (min-width: 768px){
@@ -1156,10 +1203,19 @@ footer {
         width: 85.938vw;
         padding: 0px 0px;
         margin-top: 1.465vw;
+        margin-bottom: 0;
         justify-content: space-around;
     }
 
     .menu__item {
+        filter: none;
+        margin: 0;
+    }
+
+    .menu__link {
+        margin: auto;
+        color: white;
+        text-decoration: none;
         text-align: center;
         font-size: 2.441vw;
         clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
@@ -1170,17 +1226,11 @@ footer {
         transition: all 200ms;
     }
 
-    .menu__item:hover {
+    .menu__link:hover {
         background-color: #272F40;
         border-radius: 0px;
         border-bottom: #FF5A26 solid 3px;
         font-weight: bolder;
-    }
-
-    .menu__link {
-        margin: auto;
-        color: white;
-        text-decoration: none;
     }
 
     .menu__item--active {
@@ -1215,6 +1265,8 @@ footer {
     .main__title h1 {
         color: white;
         font-size: 6.208vw;
+        line-height: 7.7vw;
+        margin: 0;
         text-decoration: none;
         text-align: center;
         position: relative;
@@ -1289,6 +1341,48 @@ footer {
         margin-bottom: 0.7vw;
     }
 
+    /*CAROUSEL HOME*/
+    .carousel-indicators-banner {
+        width: 11vw;
+        left: 0%;
+        bottom: 9%;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .carousel-indicators-banner [data-bs-target]{
+        width: 0.981vw;
+        height: 0.981vw;
+    }
+
+    .carousel-indicators-this-week [data-bs-target]{
+        width: 2.323vw;
+        height: 2.323vw;
+        margin: 0 0.5vw;
+        font-size: 1.185vw;
+        line-height: 0.9vw;
+    }
+    
+    .carousel-indicators-this-week {
+        bottom: -16.5%;
+    }
+    
+    
+    .carousel-indicators-news [data-bs-target]{
+        width: 0.981vw;
+        height: 0.981vw;
+        margin: 0 0.5vw;
+    }
+    
+    .carousel-indicators-news {
+        bottom: -4.142vw;
+    }
+
+
+    .control-prev-news-cards, .control-next-news-cards {
+        display: none;
+    }
+
     .banner__news-text {
         font-size: 1.7vw;
         padding-left: 10vw;
@@ -1325,6 +1419,7 @@ footer {
     .news-cards__title h2 {
         font-size: 3.1vw;
         max-width: 32vw;
+        line-height: 3.8vw;
     }
 
     .news-cards__text {
@@ -1379,6 +1474,10 @@ footer {
         height: 75vw;
     }
 
+    .important-news__info-container{
+        height: 75vw;
+    }
+
     .important-news__image {
         grid-column: 1 / -1;
         grid-row: 2 / 7;
@@ -1398,6 +1497,21 @@ footer {
         font-size: 1.9vw;
         margin: 0.260vw 0 0 0;
     }
+
+    /*CAROUSEL*/
+    .control-prev-important-news, .control-next-important-news {
+        display: none;
+    }
+
+    .carousel-indicators-important-news [data-bs-target]{
+        width: 1.281vw;
+        height: 1.281vw;
+    }
+
+    .carousel-indicators-important-news {
+        width: 15vw;
+    }
+
 
     /*NEWS*/
     .news__item {
@@ -1433,27 +1547,39 @@ footer {
     .featured-premieres__title {
         font-size: 5.3vw;
         line-height: 8.3vw;
-        clip-path: polygon(0% 0%,100% 0%,80% 100%,20% 100%);
+        clip-path: polygon(20% 0%,80% 0%,100% 100%,0% 100%);
         text-align: center;
-        grid-column: 2 / 12;
-        grid-row: 11 / 12;
-        background-color: #272F40;
+        background-color: #232323;
         color: #FFFBF3;
     }
 
     .features-premieres__items-row {
-        grid-column: 1 / -1;
-        grid-row: 1 / 11;
         z-index: 10;
     }
 
     .featured-premieres__item {
-        width: 20vw;
-        height: 29vw;
+        width: 19vw;
+        height: 27vw;
+    }
+
+    /*CAROUSEL*/
+    .control-prev-featured-premieres, .control-next-featured-premieres{
+        display: none;
+    }
+
+    .carousel-indicators-featured-premieres [data-bs-target] {
+        width: 1.281vw;
+        height: 1.281vw;
+    }
+
+    .carousel-indicators-featured-premieres{
+        bottom: -5vw;
+        width: 10vw;
+        height: auto;
     }
 
     .premieres {
-        margin-top: 3vw;
+        margin-top: 7vw;
         margin-bottom: 3vw;
     }
 
@@ -1590,6 +1716,54 @@ footer {
         width: 5vw;
         margin: 0 0.3vw;
     }
+
+    /*-----ICHIRAKU TEAM-----*/
+    .team-cards__title {
+        font-size: 5.1vw;
+    }
+
+    .team-cards__team-section {
+        font-size: 3.7vw;
+    }
+
+    .team-cards__card {
+        width: 25%;
+        min-height: 30vw;
+        max-height: 30vw;
+    }
+
+    .team-cards__image{
+        min-height: 12vw;
+        max-height: 12vw;
+    }
+
+    .team-cards__card-title{
+        font-size: 2.3vw;
+        line-height: 2.5vw;
+    }
+
+    .team-cards__card-text{
+        font-size: 1.1vw;
+        min-height: 9.7vw;
+        max-height: 9.7vw;
+    }
+
+    .team-cards__socials {
+        font-size: 2.1vw;
+    }
+
+    /*-----END ICHIRAKU TEAM-----*/
+
+    /*-----WORK WITH US-----*/
+    .work-with-us-title {
+        font-size: 5.1vw;
+        text-align: center;
+    }
+
+    .work-with-us-form {
+        padding: 0 15vw;
+    }
+    /*-----END WORK WITH US-----*/
 }
 
 @media screen and (max-width: 767px) and (min-width: 320px){
@@ -1648,33 +1822,40 @@ footer {
 
     .menu__item {
         text-align: center;
+        background-color: transparent;
+        filter: none;
+        margin: 0;
+        width: 100%;
+    }
+
+    .menu__link {
+        margin: auto;
+        background-color: #272F40;
+        color: inherit;
+        text-decoration: none;
+        height: auto;
         font-size: 6.083vw;
         clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-        background-color: transparent;
-        height: auto;
-        width: 100%;
-        box-shadow: none;
         transition: all 200ms;
         display: block;
     }
 
-    .menu__item:hover {
+    .menu__link:hover {
         background-color: #272F40;
         border-radius: 0px;
         font-weight: bolder;
         color: #FF5A26;
     }
 
-    .menu__link {
-        margin: auto;
-        color: inherit;
-        text-decoration: none;
-    }
-
     .menu__item--active {
         border-bottom: none;
         font-weight: bolder;
         color: #FF5A26;
+    }
+
+    .dropdown-menu {
+        width: 100%;
+        text-align: center;
     }
 
     #toggle-check:checked ~ ul {
@@ -1691,26 +1872,7 @@ footer {
     
     /*PAGE TITLE*/
     .main__page-title {
-        filter: drop-shadow( 0px 7px 7px rgba(0, 0, 0, 0.4));
-        z-index: 10;
         display: none;
-    }
-    
-    .main__title {
-        background-color: #FF8552;
-        clip-path: polygon(9% 0%, 100% 0%, 91% 100%, 0% 100%);
-        width: 60vw;
-        height: 9.510vw;
-        text-decoration: none;  
-        margin-top: -10vw;
-    }
-    
-    .main__title h1 {
-        color: white;
-        font-size: 7.5vw;
-        text-decoration: none;
-        text-align: center;
-        position: relative;
     }
 
     /*FOOTER*/
@@ -1795,6 +1957,50 @@ footer {
         text-align: center;
     }
 
+    /*CAROUSEL HOME*/
+    .carousel-indicators-banner {
+        width: 17vw;
+        left: 0%;
+        bottom: -3.3%;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 0 auto;
+    }
+
+    .carousel-indicators-banner [data-bs-target]{
+        width: 1.481vw;
+        height: 1.481vw;
+    }
+
+    .carousel-indicators-this-week [data-bs-target]{
+        width: 5.323vw;
+        height: 5.323vw;
+        margin: 0 0.5vw;
+        font-size: 2.785vw;
+        line-height: 2.6vw;
+        text-align: center;
+    }
+    
+    .carousel-indicators-this-week {
+        bottom: -17%;
+    }
+    
+    
+    .carousel-indicators-news [data-bs-target]{
+        width: 1.981vw;
+        height: 1.981vw;
+        margin: 0 0.5vw;
+    }
+    
+    .carousel-indicators-news {
+        bottom: -3%;
+    }
+
+
+    .control-prev-news-cards, .control-next-news-cards {
+        display: none;
+    }
+
     /*CARDS*/
     .cards-container {
         flex-direction: column;
@@ -1828,6 +2034,7 @@ footer {
         width: auto;
         height: 15vw;
         font-size: 6vw;
+        line-height: 7.5vw;
         max-width: 75vw;
         padding-right: 2vw;
     }
@@ -1871,7 +2078,7 @@ footer {
         height: 15vw;
     }
 
-    .card__item-title {
+    .card__item-title h2{
         font-size: 4.7vw;
         line-height: 3.5vw;
         margin-bottom: 2vw;
@@ -1892,11 +2099,16 @@ footer {
     .important-news__info-container {
         border-bottom: none;
         background-color: #FFFBF3;
+        height: 65vw;
     }
 
     .important-news__image {
         grid-column: 1 / -1;
         grid-row: 4 / -1;
+    }
+
+    .important-news__image img{
+        height: 100%;
     }
 
     .important-news__description {
@@ -1912,6 +2124,23 @@ footer {
         text-align: center;
         grid-column: 1 / -1;
         grid-row: 1 / 4;
+    }
+
+    /*CAROUSEL*/
+    .control-prev-important-news, .control-next-important-news {
+        display: none;
+    }
+
+    .carousel-indicators-important-news [data-bs-target]{
+        width: 1.481vw;
+        height: 1.481vw;
+    }
+
+    .carousel-indicators-important-news {
+        bottom: -3.4%;
+        border: none;
+        background-color: #FFFBF3;
+        width: 15vw;
     }
 
     /*NEWS*/
@@ -1953,7 +2182,7 @@ footer {
 
     /*-----PREMIERES-----*/
     .featured-premieres {
-        height: 70vw;
+        height: 100vw;
         border-bottom: none;
         box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.4);
         background-color: #FFFBF3;
@@ -1966,32 +2195,36 @@ footer {
         max-height: 15vw;
         margin: 0.8vw 0 0 0;
         text-align: center;
-        grid-column: 1 / -1;
-        grid-row: 1 / 3;
-    }
-
-    .featured-premieres__mobile-description {
-        display: block;
-        font-size: 4.7vw;
-        grid-row: 3 / 5;
-        grid-column: 1 / 11;
-        background-color: #FF8552;
-        clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
-        width: auto;
-        line-height: 5vw;
-        padding: 3.5vw 10vw 3.5vw 5vw;
-        color: #FFFBF3;
-        font-weight: bolder;
     }
 
     .features-premieres__items-row {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 1vw;
+    }
+
+    .featured-premieres__item {
+        width: 35vw;
+        height: 45vw;
+        margin: 0 0.5vw;
+    }
+
+    /*CAROUSEL*/
+    .control-prev-featured-premieres, .control-next-featured-premieres{
         display: none;
     }
 
-    .featured-premieres__mobile-image {
-        display: block;
-        grid-column: 1 / -1;
-        grid-row: 4 / -1;
+    .carousel-indicators-featured-premieres [data-bs-target] {
+        width: 1.781vw;
+        height: 1.781vw;
+    }
+
+    .carousel-indicators-featured-premieres{
+        bottom: -3.3%;
+        width: 13vw;
+        height: auto;
+        background-color: #FFFBF3;
+        border: none;
     }
 
     .premieres {
@@ -2208,4 +2441,79 @@ footer {
         width: 4.3vw;
     }
     /*-----END CONTACT-----*/
+
+    /*-----TEAM ICHIRAKU-----*/
+    .team-cards {
+        background-color: #FFFBF3;
+        width: 90vw;
+        margin: 0 auto;
+        padding: 5vw 0;
+    }
+
+    .team-cards__title {
+        font-size: 8.646vw;
+        width: 55%;
+        margin: 0 auto 3.5vw;
+    }
+    
+    .team-cards__team-section {
+        margin: 4vw auto;
+        width: 75%;
+        font-size: 6.3vw;
+    }
+
+    .team-cards__article-title {
+        flex-wrap: wrap;
+    }
+    
+    .team-cards__card {
+        width: 60%;
+        min-height: 80vw;
+        max-height: 80vw;
+        margin-bottom: 4vw;
+    }
+
+    .team-cards__image {
+        min-height: 30vw;
+        max-height: 30vw;
+    }
+    
+    .team-cards__card-title{
+        font-size: 5.5vw;
+        margin: 0 2vw 1.7vw;
+    }
+    
+    .team-cards__card-text {
+        font-size: 3.0vw;
+        padding: 0 2vw;
+        min-height: 27.4vw;
+        max-height: 27.4vw;
+        margin-bottom: 1.3vw;
+    }
+    
+    .team-cards__socials {
+        height: 15%;
+        font-size: 4.7vw;
+        padding: 0 2vw;
+    }
+
+    /*-----END TEAM ICHIRAKU-----*/
+
+    /*-----WORK WITH US-----*/
+    .work-with-us-form {
+        background-color: #FFFBF3;
+        width: 90vw;
+        padding: 5vw 4vw;
+        margin: 0 auto;
+    }
+
+    .work-with-us-title {
+        text-align: center;
+        font-size: 8vw;
+    }
+}
+
+.carousel-indicators .active {
+    background-color: #FF5A26;
+    transform: scale(1.3);
 }
