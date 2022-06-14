@@ -770,15 +770,16 @@ footer {
     border-radius: 50%;
     opacity: 1;
     margin: auto 0.5vw;
+    line-height: 1vw;
 }
 
 .carousel-indicators-featured-premieres{
-    bottom:-3vw;
+    bottom:-15%;
     width: 8vw;
     border-radius: 20px;
     border: solid 3px #FF8552;
     margin: 0.7vw auto 0;
-    height: 10%;
+    height: auto;
 }
 
 
