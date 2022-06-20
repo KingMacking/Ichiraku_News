@@ -1,0 +1,17 @@
+/*----------------------SHARED ELEMENTS----------------------*/
+
+/*BODY*/
+body {
+    background-color: $primary;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*TITLES*/
+h1, h2, h3, h4, h5, h6{
+    font-family: $font-title;
+}
+
+p {
+    font-family: $font-principal;
+}

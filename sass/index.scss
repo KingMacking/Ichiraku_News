@@ -1,0 +1,27 @@
+/*FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Pragati+Narrow&display=swap');
+
+/*---MISC---*/
+@import './misc/variables';
+@import './misc/normalize';
+@import './misc/mixins';
+@import './misc/shared_elements';
+
+/*---PARTIALS---*/
+@import './partials/header';
+@import './partials/main';
+@import './partials/footer';
+
+/*---VIEWS---*/
+@import './views/home';
+@import './views/news';
+@import './views/premieres';
+
+/*OTHERS*/
+@import './views/others/contact';
+@import './views/others/events';
+@import './views/others/giveaways';
+@import './views/others/help';
+@import './views/others/team_ichiraku';
+@import './views/others/work_with_us';

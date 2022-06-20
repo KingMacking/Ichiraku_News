@@ -8,13 +8,6 @@
     box-sizing: border-box;
 }
 
-/* *:visited {
-    color: inherit;
-} */
-.dropdown-menu .show{
-    z-index: 50;
-}
-
 .dropdown-toggle::after {
     display: none;
 }

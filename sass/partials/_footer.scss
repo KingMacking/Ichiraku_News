@@ -1,0 +1,57 @@
+/*FOOTER*/
+footer {
+    min-height: 340px;
+    height: auto;
+    background-color: $text-color;
+    color: $base;
+    font-family: $font-principal;
+    font-size: 1.8em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+
+    .footer-section {
+        list-style-type: none;
+        height: 300px;
+        width: 300px;
+        max-width: 450px;
+        border-left: solid $base 1px;
+        padding-left: 25px;
+
+        &__title {
+            font-size: 1.9em;
+            line-height: 30px;
+            margin-bottom: 15px;
+        }
+
+        &__logo {
+            width: 250px;
+            height: 250px;
+            img{
+                width: 100%;
+            }
+        }
+
+        &__item {
+            max-width: 310px;
+            margin-right: 10px;
+            display: flex;
+        }
+
+        &__icon {
+            width: 30px;
+            margin-right: 10px;
+            img{
+                width: 100%;
+            }
+        }
+
+        &__link {
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

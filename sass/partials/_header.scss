@@ -1,0 +1,92 @@
+/*HEADER*/
+header {
+    background-color: $primary-shadow;
+    color: $base;
+    position: fixed;
+    top: 0px;
+    height: 215px;
+    width: 100%;
+    font-family: $font-principal;
+    padding: 15px 0px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.4);
+    z-index: 20;
+
+    /*MENU NAVIGATION*/
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10.417vw;
+        align-items: flex-start;
+
+        &__logo {
+            width: 700px;
+            img {
+                width: 100%;
+            }
+        }
+
+        &__menu {
+            display: flex;
+            list-style-type: none;
+            width: 700px;
+            padding: 0px 0px;
+            margin-top: 20px;
+            justify-content: space-between;
+            
+            .menu__item {
+                margin-right: 15px;
+                filter: drop-shadow(5px 5px 7px rgba(0, 0, 0, 0.5));
+                width: 190px;
+                .menu__link {
+                    color: $base;
+                    display: block;
+                    text-align: center;
+                    text-decoration: none;
+                    clip-path: polygon(13% 0%, 100% 0%, 87% 100%, 0% 100%);
+                    background-color: $secondary;
+                    height: 40px;
+                    width: 100%;
+                    font-size: 2.5em;
+                    line-height: 1.6em;
+                    transition: all 200ms ease-in;
+                    &:hover {
+                        background-color: $secondary-shadow;
+                        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+                        border-radius: 7px;
+                        color: $base;
+                    }
+                    &--active{
+                        background-color: $secondary-shadow;
+                    }
+                }
+                .dropdown-menu {
+                    background-color: $primary-shadow;
+                    width: auto;
+                    min-width: 190px;
+                    --bs-dropdown-link-hover-color: #FF5A26;
+                    --bs-dropdown-link-hover-bg: #272F40;
+                }
+                .dropdown-item {
+                    color: $base;
+                    font-size: 2.3em;
+                    &:hover{
+                        font-weight: bolder;
+                    }
+                }
+            }
+        }    
+    }
+
+    /*MOBILE NAV*/
+    #toggle-check {
+        display: none;
+    }
+
+    .menu-button {
+        cursor: pointer;
+        font-size: 3vw;
+        color: #FF8552;
+        line-height: 5vw;
+        display: none;
+    }
+}

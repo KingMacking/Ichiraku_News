@@ -1,0 +1,297 @@
+/*----------------------HOME----------------------*/
+/*-----------MAIN-----------*/
+#home-main {
+    margin: 320px auto 0px;
+    max-width: 78.125vw;
+    width: 100%;
+    /*-----CAROUSEL HOME-----*/
+    .carousel-indicators-banner {
+        background-color: $base;
+        width: 2%;
+        border-radius: 20px;
+        margin: 0;
+        left: -1%;
+        bottom: 38%;
+        flex-direction: column;
+        align-items: center;
+        [data-bs-target]{
+            background-color: $secondary;
+            width: 0.781vw;
+            height: 0.781vw;
+            border-radius: 50%;
+            opacity: 1;
+            margin: 0 0.5vw;
+            
+        }
+    }
+
+    .carousel-indicators-this-week {
+        bottom: -12.5%;
+        width: 100%;
+        margin: 0 auto;
+        [data-bs-target]{
+            text-indent: 0;
+            border-radius: 50%;
+            background-color: $secondary;
+            width: 1.823vw;
+            height: 1.823vw;
+            margin: 0 0.5vw;
+            color: $base;
+            opacity: 1;
+            font-size: 0.885vw;
+            line-height: 0.9vw;
+        }
+        .active {
+            background-color: $secondary-shadow;
+            transform: scale(1.3); }
+    }
+
+    .carousel-indicators-news {
+        bottom: -2.142vw;
+        [data-bs-target]{
+            background-color: $secondary;
+            width: 0.781vw;
+            height: 0.781vw;
+            border-radius: 50%;
+            opacity: 1;
+            margin: 0 0.5vw;
+        }
+        .active {
+            background-color: $secondary-shadow;
+            transform: scale(1.3); }
+    }
+
+    .control-prev-news-cards {
+        left: 95.02%;
+        background-color: $secondary;
+        color: $base;
+        height: 20%;
+        margin: auto 0;
+        width: 5%;
+        clip-path: polygon(100% 0%,100% 100%,0% 50%);
+        opacity: 1;
+        &:hover {
+            background-color: $secondary-shadow;
+        }
+    }
+    .control-next-news-cards {
+        right: -6%;
+        background-color: $secondary;
+        color: $base;
+        height: 20%;
+        margin: auto 0;
+        width: 5%;
+        clip-path: polygon(0% 0%,0% 100%,100% 50%);
+        opacity: 1;
+        &:hover {
+            background-color: $secondary-shadow;
+        }
+    }
+    /*-----END CAROUSEL-----*/
+    /*-----BANNER LAST NEWS-----*/
+    .banner {
+        max-width: 100%;
+        min-width: 100%;
+        max-height: 31.25vw;
+        filter: drop-shadow( 0px 7px 7px rgba(0, 0, 0, 0.4));
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(11, 1fr);
+        margin: 0 auto 70px;
+
+        &__image {
+            overflow: hidden;
+            grid-row: 2 / -1;
+            grid-column: 1 / 10;
+            height: 100%;
+
+            img {
+                width: 100%;
+                height: 100%;
+                z-index: 2;
+            }
+        }
+
+        &__title-container {
+            filter: drop-shadow( 0px 7px 7px rgba(0, 0, 0, 0.4));
+            grid-row: 1 / 3;
+            grid-column: 1 / 8;
+            margin: 0 60px;
+        }
+
+        &__title {
+            background-color: $secondary;
+            clip-path: polygon(8% 0%, 100% 0%, 92% 100%, 0% 100%);
+            padding-top: 0.260vw;
+            z-index: 2;
+            height: 5.729vw;
+            max-height: 5.729vw;
+            h1 {
+                color: $base;
+                font-size: 4.5vw;
+                text-decoration: none;
+                text-align: center;
+                line-height: 5.729vw;
+            }
+        }
+
+        &__news {
+            background-color: $base;
+            clip-path: polygon(18.5% 0%, 100% 0%, 100% 100%, 18.5% 100%, 0% 50%);
+            grid-row: 2 / -1;
+            grid-column: 7 / -1;
+            color: $text-color;
+        }
+
+        &__news-title {
+            font-size: 2.604vw;
+            margin-top: 2.083vw;
+            padding-left: 9.375vw;
+            padding-right: 2.083vw;
+            max-height: 7.292vw;
+            min-height: 3.646vw;
+            overflow: hidden;
+        }
+
+        &__news-text {
+            font-size: 1.302vw;
+            padding-left: 9.375vw;
+            padding-right: 2.083vw;
+            max-height: 15.6vw;
+            overflow: hidden;
+            margin-bottom: 2.083vw;
+        }
+    }
+    /*-----END BANNER LAST NEWS-----*/
+    /*-----CARDS-----*/
+    .cards-container {
+        margin: 5.208vw auto;
+        width: 100%;
+        min-height: 61.979vw;
+        display: flex;
+        justify-content: space-between;
+        /*NEWS*/
+        .news-cards {
+            display: flex;
+            flex-direction: column;
+            width: 37vw;
+            align-items: center;
+            justify-content: space-between;
+
+            &__card {
+                width: 100%;
+                height: 18.229vw;
+                background-color: $base;
+                color: $text-color;
+                box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.4);
+            }
+
+            &__title {
+                display: flex;
+                height:  6.771vw;
+                width: 100%;
+                overflow: hidden;
+                justify-content: flex-start;
+                h2{
+                    font-size: 2.604vw;
+                    line-height: 3.2vw;
+                    max-width: 29.167vw;
+                    height: 100%;
+                    padding: 0px 0.521vw;
+                    margin: 0;
+                }
+            }
+
+            &__icon {
+                max-width: 6.771vw;
+                max-height: 6.771vw;
+                clip-path: ellipse(45% 45% at 50% 50%);
+                width: 6.771vw;
+                height: 6.771vw;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            &__text {
+                width: 31.771vw;
+                height: 7.431vw;
+                font-size: 1.302vw;
+                margin: 0.521vw 2.083vw 0px 1.042vw;
+                overflow: hidden;
+            }
+        }
+        .animation-container {
+            width: 100%;
+        }
+        /*THIS WEEK*/
+        .this-week {
+            display: flex;
+            flex-direction: column;
+            width: 37vw;
+            justify-content: space-between;
+
+            &__card {
+                background-color: $base;
+                width: 100%;
+                height: 28.646vw;
+                color: $text-color;
+                box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.4);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                .card {
+                    &__list {
+                        list-style-type: none;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-evenly;
+                        padding: 0;
+                    }
+
+                    &__title {
+                        text-align: center;
+                        font-size: 2.604vw;
+                        border-bottom: $details solid 3px;
+                        margin: 0px 1.823vw;
+                        line-height: 2.344vw;
+                    }
+
+                    &__item {
+                        width: 90%;
+                        height: 7.292vw;
+                        margin: 0.260vw auto;
+                        display: flex;
+                    }
+
+                    &__item-image {
+                        width: 5.208vw;
+                        height: 100%;
+                        margin-right: 10px;
+                    }
+
+                    &__item-image img {
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                    &__item-title {
+                        font-size: 1.563vw;
+                        margin-bottom: 0.260vw;
+                        margin-top: 0;
+                        line-height: 1.198vw;
+                    }
+
+                    &__item-data {
+                        font-size: 1.042vw;
+                        margin: 0.260vw 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+/*----------------------HOME END----------------------*/

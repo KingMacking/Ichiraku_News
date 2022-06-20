@@ -1,0 +1,32 @@
+/*MAIN*/
+#main {
+    background-color: $base;
+    width: 100%;
+    max-width: 78.125vw;
+    margin: 350px auto 0px;
+    padding: 3.125vw 3.125vw 4.167vw;
+    /*PAGE TITLE*/
+    .main__page-title {
+        filter: drop-shadow( 0px 7px 7px rgba(0, 0, 0, 0.4));
+        z-index: 10;
+    }
+
+    .main__title {
+        background-color: $secondary;
+        clip-path: polygon(9% 0%, 100% 0%, 91% 100%, 0% 100%);
+        width: 42.708vw;
+        height: 6.510vw;
+        text-decoration: none;  
+        margin-top: -6.510vw;
+
+        h1 {
+            color: $base;
+            font-size: 5.208vw;
+            line-height: 6.7vw;
+            text-decoration: none;
+            text-align: center;
+            position: relative;
+        }
+    }
+}
+
