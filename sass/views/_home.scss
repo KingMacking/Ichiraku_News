@@ -21,7 +21,10 @@
             border-radius: 50%;
             opacity: 1;
             margin: 0 0.5vw;
-            
+        }
+        .active {
+            background-color: $secondary-shadow;
+            transform: scale(1.3); 
         }
     }
 
@@ -43,7 +46,8 @@
         }
         .active {
             background-color: $secondary-shadow;
-            transform: scale(1.3); }
+            transform: scale(1.3); 
+        }
     }
 
     .carousel-indicators-news {
@@ -58,7 +62,8 @@
         }
         .active {
             background-color: $secondary-shadow;
-            transform: scale(1.3); }
+            transform: scale(1.3); 
+        }
     }
 
     .control-prev-news-cards {
