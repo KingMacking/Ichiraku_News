@@ -15,3 +15,31 @@ h1, h2, h3, h4, h5, h6{
 p {
     font-family: $font-principal;
 }
+
+/*EXTENDS*/
+.carousel-control {
+    background-color: $secondary;
+    color: $base;
+    margin: auto 0;
+    opacity: 1;
+    &:hover {
+        background-color: $secondary-shadow;
+    }
+}
+
+.carousel-indicator {
+    border-radius: 20px;
+    margin: 0 auto;
+    [data-bs-target]{
+        background-color: $secondary;
+        width: 0.781vw;
+        height: 0.781vw;
+        border-radius: 50%;
+        opacity: 1;
+        margin: 0 0.5vw;
+    }
+    .active {
+        background-color: $secondary-shadow;
+        transform: scale(1.3); 
+    }
+}

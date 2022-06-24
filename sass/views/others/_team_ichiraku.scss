@@ -3,14 +3,14 @@
     &__title {
         font-size: 3.646vw;
         text-align: center;
-        border-bottom: #FDF0D5 solid 3px;
+        border-bottom: map-get($colors, details) solid 3px;
         width: 40%;
         margin: 1.5vw auto 2.5vw;
     }
     &__team-section {
         margin: 2vw auto;
         width: 90%;
-        border-bottom: #FDF0D5 solid 3px;
+        border-bottom: map-get($colors, details) solid 3px;
         text-align: center;
         font-size: 2.3vw;
     }
@@ -20,8 +20,8 @@
         box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.2);
         min-height: 23vw;
         max-height: 23vw;
-        background-color: #232323;
-        color: white;
+        background-color: map-get($colors, text-color);
+        color: map-get($colors, base);
     }
     &__image {
         min-height: 9vw;
@@ -34,7 +34,7 @@
         margin-bottom: 0.7vw;
     }
     &__card-text {
-        font-family: 'Pragati Narrow', sans-serif;
+        font-family: $font-principal;
         font-size: 0.8vw;
         padding: 0 0.7vw;
         min-height: 7.4vw;

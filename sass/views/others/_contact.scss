@@ -3,14 +3,14 @@
 .contact-section {
     width: 100%;
     height: 46.875vw;
-    border: $details solid 3px;
+    border: map-get($colors, details) solid 3px;
     border-radius: 0.365vw;
-    color: $text-color;
+    color: map-get($colors, text-color);
     margin: 3.125vw 0px;
     padding: 0px 6.250vw;
     &__title {
         font-size: 3.646vw;
-        border-bottom: $details solid 3px;
+        border-bottom: map-get($colors, details) solid 3px;
         margin-bottom: 1.302vw;
     }
 }
@@ -26,22 +26,22 @@
         /*STYLING*/
         .name, .last-name, .email, .subject {
             font-size: 1.563vw;
-            font-family: 'Pragati Narrow', sans-serif;
+            font-family: $font-principal;
         }
         #fname, #lname {
             border: none;
-            background-color: $details;
+            background-color: map-get($colors, details);
             padding: 0.260vw 0.781vw;
             font-size: 1.563vw;
         }
         #email, #subject {
             border: none;
-            background-color: $details;
+            background-color: map-get($colors, details);
             padding: 0.260vw 0.781vw;
             font-size: 1.563vw;
         }
         #message {
-            background-color: $details;
+            background-color: map-get($colors, details);
             border: none;
             font-size: 1.563vw;
             padding: 0.260vw 0.781vw;
@@ -50,14 +50,14 @@
         .form__button-send, .form__button-reset {
             border: none;
             border-radius: 1.042vw;
-            background-color: $primary;
-            color: $details;
+            background-color: map-get($colors, primary);
+            color: map-get($colors, details);
             font-size: 1.563vw;
-            font-family: 'Pragati Narrow', sans-serif;
+            font-family: $font-principal;
             &:hover{
-                border: $primary solid 3px;
-                background-color: $details;
-                color: $primary;
+                border: map-get($colors, primary) solid 3px;
+                background-color: map-get($colors, details);
+                color: map-get($colors, primary);
                 cursor: pointer;
             }
         }
@@ -110,29 +110,26 @@
 }
 /*SOCIAL MEDIA*/
 .social-media {
-    color: $text-color;
+    color: map-get($colors, text-color);
     width: 100%;
     margin: 2.604vw 0px;
     &__links {
         list-style-type: none;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        @include flex(column, center, center, default);
     }
     &__title {
         font-size: 3.646vw;
-        border-bottom: $details solid 3px;
+        border-bottom: map-get($colors, details) solid 3px;
         margin-bottom: 3vw;
     }
     &__link {
         font-size: 1.963vw;
-        font-family: 'Pragati Narrow', sans-serif;
+        font-family: $font-principal;
         height: 3.125vw;
         display: flex;
         a{
             text-decoration: none;
-            color: $text-color;
+            color: map-get($colors, text-color);
             &:hover{
                 text-decoration: underline;
             }

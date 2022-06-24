@@ -13,10 +13,8 @@ header {
 
     /*MENU NAVIGATION*/
     .navigation {
-        display: flex;
-        flex-direction: column;
+        @include flex(column, default, flex-start, default);
         margin-left: 10.417vw;
-        align-items: flex-start;
 
         &__logo {
             width: 700px;
@@ -26,12 +24,11 @@ header {
         }
 
         &__menu {
-            display: flex;
+            @include flex(default, space-between, default, default);
             list-style-type: none;
             width: 700px;
             padding: 0px 0px;
             margin-top: 20px;
-            justify-content: space-between;
             
             .menu__item {
                 margin-right: 15px;

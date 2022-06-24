@@ -7,26 +7,13 @@
     #last_news {
         .carousel {
             &-indicators {
+                @extend .carousel-indicator;
                 background-color: $base;
                 width: 3%;
-                border-radius: 20px;
                 margin: 0;
                 left: -1.5%;
                 bottom: 38%;
-                flex-direction: column;
-                align-items: center;
-                [data-bs-target]{
-                    background-color: $secondary;
-                    width: 0.781vw;
-                    height: 0.781vw;
-                    border-radius: 50%;
-                    opacity: 1;
-                    margin: 0 0.5vw;
-                }
-                .active {
-                    background-color: $secondary-shadow;
-                    transform: scale(1.3); 
-                }
+                @include flex(column, default, center, default);
             }
             .banner {
                 max-width: 100%;
@@ -98,59 +85,32 @@
     }
     /*-----CARDS-----*/
     .cards-container {
+        @include flex(default, space-between, default, default);
         margin: 5.208vw auto;
         width: 100%;
         min-height: 61.979vw;
-        display: flex;
-        justify-content: space-between;
         /*NEWS*/
         .news-cards {
-            display: flex;
-            flex-direction: column;
+            @include flex(column, space-between, center, default);
             width: 37vw;
-            align-items: center;
-            justify-content: space-between;
             .carousel {
                 &-indicators {
-                    bottom: -2.142vw;
-                    [data-bs-target]{
-                        background-color: $secondary;
-                        width: 0.781vw;
-                        height: 0.781vw;
-                        border-radius: 50%;
-                        opacity: 1;
-                        margin: 0 0.5vw;
-                    }
-                    .active {
-                        background-color: $secondary-shadow;
-                        transform: scale(1.3); 
-                    }
+                    @extend .carousel-indicator;
+                    bottom: -12%;
                 }
                 &-control-prev {
+                    @extend .carousel-control;
                     left: 95.02%;
-                    background-color: $secondary;
-                    color: $base;
                     height: 20%;
-                    margin: auto 0;
                     width: 5%;
                     clip-path: polygon(100% 0%,100% 100%,0% 50%);
-                    opacity: 1;
-                    &:hover {
-                        background-color: $secondary-shadow;
-                    }
                 }
                 &-control-next {
+                    @extend .carousel-control;
                     right: -6%;
-                    background-color: $secondary;
-                    color: $base;
                     height: 20%;
-                    margin: auto 0;
                     width: 5%;
                     clip-path: polygon(0% 0%,0% 100%,100% 50%);
-                    opacity: 1;
-                    &:hover {
-                        background-color: $secondary-shadow;
-                    }
                 }
             }
             &__card {
@@ -161,11 +121,10 @@
                 box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.4);
             }
             &__title {
-                display: flex;
+                @include flex(default, flex-start, default, default);
                 height:  6.771vw;
                 width: 100%;
                 overflow: hidden;
-                justify-content: flex-start;
                 h2{
                     font-size: 2.604vw;
                     line-height: 3.2vw;
@@ -199,49 +158,35 @@
         }
         /*THIS WEEK*/
         .this-week {
-            display: flex;
-            flex-direction: column;
+            @include flex(column, space-between, default, default);
             width: 37vw;
-            justify-content: space-between;
             .carousel {
                 &-indicators {
+                    @extend .carousel-indicator;
                     bottom: -12.5%;
                     width: 100%;
-                    margin: 0 auto;
                     [data-bs-target]{
                         text-indent: 0;
-                        border-radius: 50%;
-                        background-color: $secondary;
                         width: 1.823vw;
                         height: 1.823vw;
-                        margin: 0 0.5vw;
-                        color: $base;
-                        opacity: 1;
                         font-size: 0.885vw;
                         line-height: 0.9vw;
-                    }
-                    .active {
-                        background-color: $secondary-shadow;
-                        transform: scale(1.3); 
+                        color: $base;
                     }
                 }
             }
             &__card {
+                @include flex(column, center, default, default);
                 background-color: $base;
                 width: 100%;
                 height: 28.646vw;
                 color: $text-color;
                 box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.4);
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
                 .card {
                     &__list {
                         list-style-type: none;
                         height: 100%;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: space-evenly;
+                        @include flex(column, space-evenly, default, default);
                         padding: 0;
                     }
                     &__title {
