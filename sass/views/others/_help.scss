@@ -1,0 +1,52 @@
+/*----------------------HELP/FAQ----------------------*/
+.faq {
+    height: 21.875vw;
+    width: 100%;
+    border-bottom: $details solid 3px;
+    color: $text-color;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    margin-top: 2.083vw;
+    &__title {
+        font-size: 3.646vw;
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+    }
+    &__description {
+        font-size: 1.563vw;
+        margin-bottom: 1.042vw;
+        grid-row: 3 / -1;
+        grid-column: 1 / 12;
+    }
+    &__description {
+        font-size: 1.563vw;
+        margin-bottom: 1.042vw;
+        grid-row: 3 / -1;
+        grid-column: 1 / 12;
+    }
+}
+.questions {
+    color: $text-color;
+    width: 100%;
+    &__answers {
+        list-style-type: none;
+        .answers {
+            &__item {
+                height: auto;
+                padding: 1.302vw 0px;
+                border-bottom: $details solid 3px;
+                overflow: hidden;
+            }
+            &__title {
+                font-size: 2.604vw;
+                margin: 0px 0px 0.521vw;
+            }
+            &__description {
+                font-size: 1.302vw;
+                margin: 0xp 0px;
+            }
+        }
+    }
+}
+/*----------------------END HELP/FAQ----------------------*/

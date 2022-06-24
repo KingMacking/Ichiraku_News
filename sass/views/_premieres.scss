@@ -1,0 +1,153 @@
+/*----------------------PREMIERES----------------------*/
+.featured-premieres {
+    height: 31.250vw;
+    width: 100%;
+    border-bottom: $details solid 3px;
+    box-sizing: border-box;
+    color: $text-color;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.083vw;
+    &__title {
+        font-size: 3.646vw;
+        line-height: 3.125vw;
+    }
+    &__mobile-description {
+        display: none;
+    }
+    &__items-row {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__mobile-image {
+        display: none;
+        overflow: hidden;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__item {
+        width: 17.169vw;
+        height: 23.438vw;
+        img {
+            height: 100%;
+            width: 100%;
+            border-radius: 20px;
+        }
+    }
+
+    .carousel{
+        &-control-next{
+            right: -4%;
+            background-color: $secondary;
+            color: $base;
+            height: 10%;
+            margin: auto 0;
+            width: 3%;
+            clip-path: polygon(0% 0%,0% 100%,100% 50%);
+            opacity: 1;
+            &:hover{
+                background-color: $secondary-shadow;
+            }
+        }
+        &-control-prev{
+            left: -4%;
+            background-color: $secondary;
+            color: $base;
+            height: 10%;
+            margin: auto 0;
+            width: 3%;
+            clip-path: polygon(100% 0%,100% 100%,0% 50%);
+            opacity: 1;
+            &:hover{
+                background-color: $secondary-shadow;
+            }
+        }
+        &-indicators{
+            bottom:-15%;
+            width: 8vw;
+            border-radius: 20px;
+            border: solid 3px $secondary;
+            margin: 0.7vw auto 0;
+            height: auto;
+            [data-bs-target]{
+                background-color: $secondary;
+                width: 0.781vw;
+                height: 0.781vw;
+                border-radius: 50%;
+                opacity: 1;
+                margin: auto 0.5vw;
+                line-height: 1vw;
+            }
+            .active {
+                background-color: $secondary-shadow;
+                transform: scale(1.3); 
+            }
+        }
+    }
+}
+.premieres {
+    color: $text-color;
+    width: 100%;
+    margin-bottom: 4.167vw;
+    margin-top: 2.604vw;
+    &__title {
+        font-size: 2.604vw;
+        margin: 0.781vw 0px;
+    }
+    &__items-row {
+        height: auto;
+        width: 100%;
+        margin: 0.260vw 0px;
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    &__item {
+        height: 15.885vw;
+        width: 11.458vw;
+        min-width: 11.458vw;
+        min-height: 15.885vw;
+        margin: 0px 0.521vw 0.521vw 0px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 0.365vw;
+        img {
+            height: 100%;
+            width: 100%;
+            transition: all 500ms ease-out;
+        }
+        &:hover > .premieres__item-hover-layer {
+            opacity: 1;
+            visibility: visible;
+            h4{
+                margin-top: 2.083vw;
+                margin-bottom: 2.083vw;    
+            }
+        }
+    }
+    &__item-hover-layer {
+        width: 100%;
+        height: 100%;
+        color: $base;
+        background-color: #2f3858a4;
+        position: absolute;
+        top: 0;
+        transition: all 500ms ease-out;
+        opacity: 0;
+        visibility: hidden;
+        text-align: center;
+        h4{
+            margin-top: 0.521vw;
+            margin-bottom: 13.021vw;
+            font-size: 1.706vw;
+            transition: all 500ms ease-out;
+        }
+        p {
+            font-size: 1.198vw;
+            transition: all 500ms ease-out;
+        }
+    }
+}
+/*----------------------END PREMIERES----------------------*/

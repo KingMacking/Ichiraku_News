@@ -1,0 +1,52 @@
+/*----------------------ICHIRAKU TEAM----------------------*/
+.team-cards {
+    &__title {
+        font-size: 3.646vw;
+        text-align: center;
+        border-bottom: #FDF0D5 solid 3px;
+        width: 40%;
+        margin: 1.5vw auto 2.5vw;
+    }
+    &__team-section {
+        margin: 2vw auto;
+        width: 90%;
+        border-bottom: #FDF0D5 solid 3px;
+        text-align: center;
+        font-size: 2.3vw;
+    }
+    &__card {
+        width: 20%;
+        border-color: #d3d3d3;
+        box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.2);
+        min-height: 23vw;
+        max-height: 23vw;
+        background-color: #232323;
+        color: white;
+    }
+    &__image {
+        min-height: 9vw;
+        max-height: 9vw;
+    }
+    &__card-title{
+        font-size: 1.5vw;
+        text-align: center;
+        border-bottom: solid 1px #bebebe;
+        margin-bottom: 0.7vw;
+    }
+    &__card-text {
+        font-family: 'Pragati Narrow', sans-serif;
+        font-size: 0.8vw;
+        padding: 0 0.7vw;
+        min-height: 7.4vw;
+        max-height: 7.4vw;
+        overflow: hidden;
+        margin-bottom: 0.3vw;
+    }
+    &__socials {
+        height: 15%;
+        font-size: 1.5vw;
+        padding: 0 0.7vw;
+        text-align: center;
+    }
+}
+/*----------------------END ICHIRAKU TEAM----------------------*/
