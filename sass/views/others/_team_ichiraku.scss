@@ -48,5 +48,34 @@
         padding: 0 0.7vw;
         text-align: center;
     }
+    @include screen (tablet){
+        &__title {
+            font-size: 5.1vw;
+        }
+        &__team-section {
+            font-size: 3.7vw;
+        }
+        &__card {
+            width: 24%;
+            min-height: 30vw;
+            max-height: 30vw;
+        }
+        &__image{
+            min-height: 12vw;
+            max-height: 12vw;
+        }
+        &__card-title{
+            font-size: 2.3vw;
+            line-height: 2.5vw;
+        }
+        &__card-text{
+            font-size: 1.1vw;
+            min-height: 9.7vw;
+            max-height: 9.7vw;
+        }
+        &__socials {
+            font-size: 2.1vw;
+        }
+    }
 }
 /*----------------------END ICHIRAKU TEAM----------------------*/

@@ -25,12 +25,25 @@
         grid-row: 3 / -1;
         grid-column: 1 / 12;
     }
+    @include screen (tablet){
+        height: 35vw;
+        margin-top: 5vw;
+        &__title {
+            font-size: 4.5vw;
+            grid-row: 1 / 3;
+        }
+        &__description {
+            font-size: 2.5vw;
+            grid-row: 4 / 12;
+        }
+    }
 }
 .questions {
     color: $text-color;
     width: 100%;
     &__answers {
         list-style-type: none;
+        padding: 0;
         .answers {
             &__item {
                 height: auto;
@@ -45,6 +58,19 @@
             &__description {
                 font-size: 1.302vw;
                 margin: 0xp 0px;
+            }
+            @include screen (tablet){
+                &__item {
+                    height: auto;
+                    padding: 1.8vw 0;
+                }
+                &__title {
+                    font-size: 3.5vw;
+                    margin: 0 0 0.7vw;
+                }
+                &__description {
+                    font-size: 2.1vw;
+                }
             }
         }
     }

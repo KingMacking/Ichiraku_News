@@ -4,7 +4,7 @@
     margin: 320px auto 0px;
     max-width: 78.125vw;
     width: 100%;
-    #last_news {
+    #last-news {
         .carousel {
             &-indicators {
                 @extend .carousel-indicator;
@@ -229,5 +229,124 @@
             }
         }
     }
+    @include screen(tablet){
+        max-width: 85vw;
+        margin: 26.367vw auto 0px;
+        #last-news{
+            .carousel{
+                &-indicators {
+                    width: 13vw;
+                    left: 0%;
+                    bottom: 9%;
+                    margin: 0 auto;
+                    @include flex(row, space-evenly, default, default);
+                    [data-bs-target]{
+                        width: 0.981vw;
+                        height: 0.981vw;
+                    }
+                }
+                .banner{
+                    max-height: 33vw;
+                    margin: 0px auto 4.883vw;
+                    &__title-container {
+                        margin: 0 3.906vw;
+                    }
+                    &__news-title {
+                        font-size: 3vw;
+                        margin-top: 2.5vw;
+                        padding-left: 10vw;
+                        padding-right: 3vw;
+                        margin-bottom: 0.7vw;
+                    }
+                    &__news-text {
+                        font-size: 1.7vw;
+                        padding-left: 10vw;
+                        padding-right: 3vw;
+                        margin-bottom: 2.1vw;
+                        max-height: 17.5vw;
+                    }
+                }
+            }
+        }
+        .cards-container {
+            min-height: 70vw;
+            .news-cards {
+                width: 39.5vw;
+                .carousel{
+                    &-indicators {
+                        bottom: -15%;
+                        [data-bs-target]{
+                            width: 0.981vw;
+                            height: 0.981vw;
+                        }
+                    }
+                    &-control-prev, &-control-next {
+                        display: none;
+                    }
+                }
+                &__card {
+                    height: 20vw;
+                }
+                &__title {
+                    height: 7.5vw;
+                    h2 {
+                        font-size: 3.1vw;
+                        max-width: 32vw;
+                        line-height: 3.8vw;
+                    }
+                }
+                &__icon {
+                    max-width: 7.5vw;
+                    max-height: 7.5vw;
+                    width: 7.5vw;
+                    height: 7.5vw;
+                }
+                &__text {
+                    width: 36.4vw;
+                    font-size: 1.5vw;
+                    height: 8.7vw;
+                }
+            }
+            .this-week {
+                width: 39.5vw;
+                .carousel {
+                    &-indicators {
+                        bottom: -17.5%;
+                        [data-bs-target]{
+                            width: 2.723vw;
+                            height: 2.723vw;
+                            font-size: 1.385vw;
+                            line-height: 1.2vw;
+                        }
+                    }
+                }
+                &__card {
+                    height: 32vw;
+                    .card {
+                        &__title {
+                            font-size: 3.1vw;
+                            line-height: 2.95vw;
+                            margin: 0px 2.1vw;
+                        }
+                        &__item {
+                            height: 8.1vw;
+                        }
+                        &__item-image {
+                            width: 5.9vw;
+                        }
+                        &__item-info {
+                            width: 28.7vw;
+                            height: 8.1vw;
+                        }
+                        &__item-data {
+                            font-size: 1.3vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
+
+
 /*----------------------HOME END----------------------*/

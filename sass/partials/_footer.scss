@@ -6,9 +6,7 @@ footer {
     color: $base;
     font-family: $font-principal;
     font-size: 1.8em;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    @include flex(default, space-around,center,default);
     width: 100%;
 
     .footer-section {
@@ -51,6 +49,31 @@ footer {
             text-decoration: none;
             &:hover {
                 text-decoration: underline;
+            }
+        }
+    }
+    @include screen (tablet){
+        min-height: 30.203vw;
+        font-size: 1.372vw;
+        .footer-section {
+            height: 22.531vw;
+            width: 19,531vw;
+            padding-left: 2.441vw;
+            &__title {
+                font-size: 2.565vw;
+                line-height: 1.941vw;
+                margin-bottom: 0.977vw;
+            }
+            &__logo {
+                width: 19.531vw;
+                height: 19.531vw;
+            }
+            &__item {
+                max-width: 19.531vw;
+                margin-right: 2.930vw;
+            }
+            &__icon {
+                width: 2.172vw;
             }
         }
     }

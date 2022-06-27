@@ -10,16 +10,29 @@ header {
     padding: 15px 0px;
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.4);
     z-index: 20;
+    @include screen(tablet){
+        height: 20.996;
+        padding: 0;
+    }
 
     /*MENU NAVIGATION*/
     .navigation {
         @include flex(column, default, flex-start, default);
         margin-left: 10.417vw;
+        @include screen(tablet){
+            @include flex(column, space-between, center, default);
+            padding-top: 1.953vw;
+            height: 100%;
+            margin: 0;
+        }
 
         &__logo {
             width: 700px;
             img {
                 width: 100%;
+            }
+            @include screen(tablet){
+                width: 48.828vw;
             }
         }
 
@@ -29,11 +42,22 @@ header {
             width: 700px;
             padding: 0px 0px;
             margin-top: 20px;
+            @include screen(tablet){
+                width: 85.938vw;
+                padding: 0;
+                margin-top: 1.465vw;
+                margin-bottom: 0;
+                @include flex(default, space-around, default, default)
+            }
             
             .menu__item {
                 margin-right: 15px;
                 filter: drop-shadow(5px 5px 7px rgba(0, 0, 0, 0.5));
                 width: 190px;
+                @include screen(tablet){
+                    filter: none;
+                    margin: 0;
+                }
                 .menu__link {
                     color: $base;
                     display: block;
@@ -54,6 +78,26 @@ header {
                     }
                     &--active{
                         background-color: $secondary-shadow;
+                    }
+                    @include screen(tablet){
+                        margin: auto;
+                        font-size: 2,441vw;
+                        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+                        background-color: $primary-shadow;
+                        height: 4.883vw;
+                        width: 18.555vw;
+                        transition: all 200ms;
+                        &:hover {
+                            background-color: $primary-shadow;
+                            border-radius: 0;
+                            border-bottom: $secondary-shadow solid 3px;
+                            font-weight: bolder;
+                        }
+                        &--active{
+                            background-color: $primary-shadow;
+                            border-bottom: $secondary-shadow;
+                            font-weight: bolder;
+                        }
                     }
                 }
                 .dropdown-menu {

@@ -26,5 +26,18 @@
             position: relative;
         }
     }
+    @include screen (tablet){
+        max-width: 85vw;
+        margin: 34.180vw auto 0;
+        .main__title {
+            width: 44.708vw;
+            height: 7.510vw;
+            margin-top: -7.510vw;
+            h1 {
+                font-size: 6.208vw;
+                line-height: 7.7vw;
+            }
+        }
+    }
 }
 

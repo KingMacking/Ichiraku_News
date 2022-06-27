@@ -1,16 +1,28 @@
 /*----------------------WORK WITH US----------------------*/
-.work-with-us-form{
-    margin-top: 3vw;
-    padding-right: 35vw;
-}
-
-.work-with-us-title{
-    font-size: 3.646vw;
-    border-bottom: $details solid 3px;
-    margin-bottom: 1.302vw;
+.work-with-us {
+    &-form{
+        margin-top: 3vw;
+        padding-right: 35vw;
+    }
+    
+    &-title{
+        font-size: 3.646vw;
+        border-bottom: $details solid 3px;
+        margin-bottom: 1.302vw;
+    }
+    @include screen (tablet){
+        &-form {
+            padding: 0 15vw;
+        }
+        &-title {
+            font-size: 5.1vw;
+            text-align: center;
+        }
+    }
 }
 
 .work-form{
     font-family: $font-principal;
 }
+
 /*----------------------END WORK WITH US----------------------*/

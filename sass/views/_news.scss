@@ -66,6 +66,41 @@
             height: 100%;
         }
     }
+    @include screen (tablet){
+        height: 75vw;
+        &__info-container {
+            height: 75vw;
+        }
+        &__image {
+            grid-column: 1 / -1;
+            grid-row: 2 / 7;
+        }
+        &__title {
+            grid-column: 1 / -1;
+            grid-row: 7 / 9;
+            font-size: 5vw;
+            line-height: 4.7vw;
+            margin: 1vw 0 0.5vw 0;
+        }
+        &__description {
+            grid-column: 1 / -1;
+            grid-row: 9 / 12;
+            font-size: 1.9vw;
+            margin: 0.260vw 0 0 0;
+        }
+        .carousel {
+            &-control-prev, &-control-next {
+                display: none;
+            }
+            &-indicators {
+                width: 15vw;
+                [data-bs-target]{
+                    width: 1.281vw;
+                    height: 1.281vw;
+                }
+            }
+        }
+    }
 }
 
 /*CAROUSEL IMPORTANT NEWS*/
@@ -73,7 +108,7 @@
 
 /*NEWS*/
 .news {
-    color: #232323;
+    color: $text-color;
     @include flex(column, default, default, default);
     &__item {
         height: 15.625vw;
@@ -102,6 +137,25 @@
     &__description {
         font-size: 1.302vw;
         margin: 0.521vw 0px;
+    }
+    @include screen (tablet){
+        &__item {
+            height: 18.5vw;
+        }
+        &__image {
+            height: 16vw;
+            width: 11.5vw;
+        }
+        &__info {
+            width: 65.3vw;
+            height: 17vw;
+        }
+        &__title {
+            font-size: 3.3vw;
+        }
+        &__description {
+            font-size: 1.7vw;
+        }
     }
 }
 /*----------------------END NEWS----------------------*/
