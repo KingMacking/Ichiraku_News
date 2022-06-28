@@ -77,5 +77,50 @@
             font-size: 2.1vw;
         }
     }
+    @include screen (mobile){
+        background-color: $base;
+        width: 90vw;
+        margin: 0 auto;
+        padding: 5vw 0;
+        &__title {
+            font-size: 8.646vw;
+            width: 55%;
+            margin: 0 auto 3.5vw;
+        }
+        &__team-section {
+            margin: 4vw auto;
+            width: 75%;
+            font-size: 6.3vw;
+        }
+        &__article-title {
+            flex-wrap: wrap;
+        }
+        &__card {
+            width: 60%;
+            min-height: 80vw;
+            max-height: 80vw;
+            margin-bottom: 4vw;
+        }
+        &__image {
+            min-height: 30vw;
+            max-height: 30vw;
+        }
+        &__card-title{
+            font-size: 5.5vw;
+            margin: 0 2vw 1.7vw;
+        }
+        &__card-text {
+            font-size: 3.0vw;
+            padding: 0 2vw;
+            min-height: 27.4vw;
+            max-height: 27.4vw;
+            margin-bottom: 1.3vw;
+        }
+        &__socials {
+            height: 15%;
+            font-size: 4.7vw;
+            padding: 0 2vw;
+        }
+    }
 }
 /*----------------------END ICHIRAKU TEAM----------------------*/

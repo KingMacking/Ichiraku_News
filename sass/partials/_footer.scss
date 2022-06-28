@@ -77,4 +77,35 @@ footer {
             }
         }
     }
+    @include screen (mobile){
+        font-size: 2.1vw;
+        @include flex(default, space-around, center, wrap);
+        width: 100%;
+        padding: 0 15vw;
+        .footer-section {
+            height: 37vw;
+            width: 25vw;
+            padding-left: 2.441vw;
+            margin: 3vw 5vw;
+            &__title {
+                font-size: 4.2vw;
+                line-height: 3.71vw;
+                margin-bottom: 0.977vw;
+            }
+            &__logo {
+                width: 25vw;
+                height: 19.531vw;
+                margin: 3vw 5vw;
+            }
+            &__item {
+                max-width: 20vw;
+                margin-right: 2.930vw;
+                display: flex;
+            }
+            &__icon {
+                width: 3.5vw;
+                margin-right: 5px;
+            }
+        }
+    }
 }

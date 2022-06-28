@@ -92,6 +92,43 @@
             }
         }
     }
+    @include screen (mobile){
+        height: 100vw;
+        border-bottom: none;
+        box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.4);
+        background-color: $base;
+        &__title {
+            font-size: 7vw;
+            line-height: 7.9vw;
+            padding: 0vw 2vw;
+            max-height: 15vw;
+            margin: 0.8vw 0 0 0;
+            text-align: center;
+        }
+        &__items-row {
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 1vw;
+        }
+        &__item {
+            width: 35vw;
+            height: 45vw;
+            margin: 0 0.5vw;
+        }
+        .carousel {
+            &-indicators {
+                bottom: -3.3%;
+                width: 13vw;
+                height: auto;
+                background-color: $base;
+                border: none;
+                [data-bs-target] {
+                    width: 1.781vw;
+                    height: 1.781vw;
+                }
+            }
+        }
+    }
 }
 .premieres {
     color: $text-color;
@@ -185,6 +222,43 @@
             }
             p {
                 font-size: 1.7vw;
+            }
+        }
+    }
+    @include screen (mobile){
+        width: 90vw;
+        margin: 10vw auto 0;
+        background-color: $base;
+        box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.4);
+        padding: 2vw 3vw;
+        &__title {
+            text-align: center;
+            font-size: 5.7vw;
+            margin: 0 0 2vw 0;
+        }
+        &__items-row{
+            margin-bottom: 5vw;
+        }
+        &__item {
+            height: 37vw;
+            width: 27.3vw;
+            min-width: 27.3vw;
+            min-height: 37vw;
+            margin: 0 0.7vw 0.7vw 0;
+            border-radius: 0.9vw;
+            &:hover > .premieres__item-hover-layer {
+                h4{
+                    margin-top: 3.5vw;
+                    margin-bottom: 3.5vw;
+                }
+            }
+        }
+        &__item-hover-layer {
+            h4 {
+                font-size: 4.5vw;
+            }
+            p {
+                font-size: 3.3vw;
             }
         }
     }

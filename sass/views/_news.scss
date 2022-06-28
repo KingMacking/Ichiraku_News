@@ -9,17 +9,14 @@
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: repeat(12, 1fr);
     }
-
     &__image {
         grid-column: 1 / 6;
         grid-row: 2 / 11;
-
         img {
             width: 100%;
             height: 100%;
         }
     }
-
     &__title {
         font-size: 3.646vw;
         line-height: 4.475vw;
@@ -28,7 +25,6 @@
         grid-column: 6 / -1;
         grid-row: 2 / 6;
     }
-
     &__description {
         font-size: 1.563vw;
         line-height: 2.2vw;
@@ -101,6 +97,50 @@
             }
         }
     }
+    @include screen (mobile){
+        height: 65vw;
+        box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.4);
+        &__info-container {
+            border-bottom: none;
+            background-color: #FFFBF3;
+            height: 65vw;
+        }
+        &__image {
+            grid-column: 1 / -1;
+            grid-row: 4 / -1;
+            img{
+                height: 100%;
+            }
+        }
+        &__title {
+            font-size: 6vw;
+            line-height: 7.9vw;
+            padding: 0vw 2vw;
+            max-height: 15vw;
+            margin: 0.6vw 0 0 0;
+            text-align: center;
+            grid-column: 1 / -1;
+            grid-row: 1 / 4;
+        }
+        &__description {
+            display: none;
+        }
+        .carousel {
+            &-indicators {
+                bottom: -3.4%;
+                border: none;
+                background-color: $base;
+                width: 15vw;
+                [data-bs-target]{
+                    width: 1.481vw;
+                    height: 1.481vw;
+                }
+            }
+            &-control-next, &-control-prev {
+                display: none;
+            }
+        }
+    }
 }
 
 /*CAROUSEL IMPORTANT NEWS*/
@@ -131,12 +171,14 @@
     }
     &__title {
         font-size: 2.604vw;
-        margin: 0.781vw 0px;
+        margin: 0.781vw 0 0.1vw;
         overflow: hidden;
+        @include text-shorten(2)
     }
     &__description {
         font-size: 1.302vw;
-        margin: 0.521vw 0px;
+        margin: 0.1vw 0 0.2vw;
+        @include text-shorten(4)
     }
     @include screen (tablet){
         &__item {
@@ -152,9 +194,43 @@
         }
         &__title {
             font-size: 3.3vw;
+            @include text-shorten(2)
         }
         &__description {
             font-size: 1.7vw;
+            @include text-shorten(3)
+        }
+    }
+    @include screen (mobile){
+        margin: 10vw auto 0;
+        background-color: $base;
+        width: 90vw;
+        padding: 2vw 4vw;
+        box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.4);
+        &__item {
+            height: 30vw;
+            padding: 2vw 0;
+        }
+        &__image {
+            height: 100%;
+            width: 17vw;
+            margin: 0 2vw 0 0;
+        }
+        &__info {
+            height: 100%;
+            width: 63vw;
+        }
+        &__title {
+            font-size: 4.7vw;
+            line-height: 4.3vw;
+            margin: 0;
+            @include text-shorten(2)
+        }
+        &__description {
+            font-size: 2.7vw;
+            margin: 0.6vw 0 0 0;
+            line-height: 3.9vw;
+            @include text-shorten(4)
         }
     }
 }

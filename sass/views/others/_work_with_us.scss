@@ -19,6 +19,18 @@
             text-align: center;
         }
     }
+    @include screen (mobile){
+        &-form {
+            background-color: $base;
+            width: 90vw;
+            padding: 5vw 4vw;
+            margin: 0 auto;
+        }
+        &-title {
+            text-align: center;
+            font-size: 8vw;
+        }
+    }
 }
 
 .work-form{
