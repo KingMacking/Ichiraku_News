@@ -71,6 +71,7 @@
                     max-height: 7.292vw;
                     min-height: 3.646vw;
                     overflow: hidden;
+                    @include text-shorten(2)
                 }
                 &__news-text {
                     font-size: 1.302vw;
@@ -79,6 +80,7 @@
                     max-height: 15.6vw;
                     overflow: hidden;
                     margin-bottom: 2.083vw;
+                    @include text-shorten(7)
                 }
             }
         }
@@ -132,6 +134,7 @@
                     height: 100%;
                     padding: 0px 0.521vw;
                     margin: 0;
+                    @include text-shorten(2)
                 }
             }
             &__icon {
@@ -151,6 +154,7 @@
                 font-size: 1.302vw;
                 margin: 0.521vw 2.083vw 0px 1.042vw;
                 overflow: hidden;
+                @include text-shorten(4)
             }
         }
         .animation-container {
