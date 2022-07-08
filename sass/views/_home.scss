@@ -129,7 +129,7 @@
                 overflow: hidden;
                 h2{
                     font-size: 2.604vw;
-                    line-height: 3.2vw;
+                    line-height: 3.35vw;
                     max-width: 29.167vw;
                     height: 100%;
                     padding: 0px 0.521vw;
@@ -167,7 +167,7 @@
             .carousel {
                 &-indicators {
                     @extend .carousel-indicator;
-                    bottom: -12.5%;
+                    bottom: -11%;
                     width: 100%;
                     [data-bs-target]{
                         text-indent: 0;
@@ -315,7 +315,7 @@
                 width: 39.5vw;
                 .carousel {
                     &-indicators {
-                        bottom: -17.5%;
+                        bottom: -15%;
                         [data-bs-target]{
                             width: 2.723vw;
                             height: 2.723vw;
@@ -440,8 +440,9 @@
                     margin: 0;
                     padding: 2vw 2vw 2vw;
                     font-size: 3.6vw;
+                    line-height: 5.9vw;
                     height: auto;
-                    max-height: 30vw;
+                    max-height: 27vw;
                 }
             }
             .this-week {
@@ -449,7 +450,7 @@
                 margin: 8vw 0;
                 .carousel {
                     &-indicators {
-                        bottom: -16%;
+                        bottom: -13%;
                         [data-bs-target]{
                             width: 5.323vw;
                             height: 5.323vw;
